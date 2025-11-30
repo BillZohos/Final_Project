@@ -1,0 +1,74 @@
+year,season,city,country,notes
+,Summer,Athens,Greece,1896
+,Summer,Paris,France,1900
+,Summer,St. Louis[a],United States,1904
+,Summer,London[b],United Kingdom,1908
+,Summer,Stockholm,Sweden,1912
+,Summer,Antwerp[c],Belgium,1920
+,Summer,Chamonix,France,1924
+,Summer,Paris,S008VIII,
+,Summer,St. Moritz,Switzerland,1928
+,Summer,Amsterdam,Netherlands,S009IX
+,Summer,Lake Placid,United States,1932
+,Summer,Los Angeles,S010X,
+,Summer,Garmisch-Partenkirchen,Germany,1936
+,Summer,Berlin,S011XI,
+,Summer,St. Moritz,Switzerland,1948
+,Summer,London,United Kingdom,S014XIV
+,Summer,Oslo,Norway,1952
+,Summer,Helsinki,Finland,S015XV
+,Summer,Cortina d'Ampezzo,Italy,1956
+,Summer,MelbourneStockholm[f],AustraliaSweden,OceaniaEurope
+,Summer,Squaw Valley,United States,1960
+,Summer,Rome,Italy,Europe
+,Summer,Innsbruck,Austria,1964
+,Summer,Tokyo,Japan,Asia
+,Summer,Grenoble,France,1968
+,Summer,Mexico City,Mexico,North America
+,Summer,Sapporo,Japan,1972
+,Summer,Munich,West Germany,Europe
+,Summer,Innsbruck[h],Austria,1976
+,Summer,Montreal,Canada,North America
+,Summer,Lake Placid,United States,1980
+,Summer,Moscow,Soviet Union[i],Europe
+,Summer,Sarajevo,Yugoslavia[j],1984
+,Summer,Los Angeles,United States,North America
+,Summer,Calgary,Canada,1988
+,Summer,Seoul,South Korea,Asia
+,Summer,Albertville,France,1992
+,Summer,Barcelona,Spain,S025XXV
+,Summer,Lillehammer,Norway,1994
+,Summer,Atlanta,United States,1996
+,Summer,Nagano,Japan,1998
+,Summer,Sydney,Australia,2000
+,Summer,Salt Lake City,United States,2002
+,Summer,Athens,Greece,2004
+,Summer,Turin,Italy,2006
+,Summer,Beijing[k],China,2008
+,Summer,Vancouver,Canada,2010
+,Summer,London,United Kingdom,2012
+,Summer,Sochi,Russia[i],2014
+,Summer,Rio de Janeiro,Brazil,2016
+,Summer,Pyeongchang,South Korea,2018
+,Summer,Beijing,China,2022
+,Summer,Paris[m],France,2024
+,Summer,Paris[m],France,2024
+2,Winter,Albertville,,"1 (1992)"
+3,Winter,London,United Kingdom,Europe
+Athens,Winter,Greece,"2 (1896,2004)",
+Beijing,Winter,China,Asia,1 (2008)
+Cortina d'Ampezzo,Winter,Italy,Europe,
+Innsbruck,Winter,Austria,,"2 (1964,1976)"
+Lake Placid,Winter,United States,North America,
+Los Angeles,Winter,United States,North America,"2 (1932,1984)"
+Paris,Winter,France,Europe,"3 (1900,1924,2024)"
+Salt Lake City,Winter,,"1 (2002)",
+St. Moritz,Winter,Switzerland,Europe,
+Tokyo,Winter,Japan,Asia,"2 (1964,2020)"
+Turin,Winter,,"1 (2006)",
+§,Summer,Tokyo,Japan,2020
+†,Summer,Berlin,Germany,1916
+†,Summer,SapporoGarmisch-Partenkirchen[d],JapanGermany,1940
+†,Summer,TokyoHelsinki[e],JapanFinland,XII
+†,Summer,Cortina d'Ampezzo,Italy,1944
+†,Summer,London,United Kingdom,XIIIS013

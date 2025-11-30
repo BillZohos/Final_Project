@@ -1,0 +1,63 @@
+key,year,city,country,query,lat,lon,provider,status,timestamp
+1896|Athens|Greece,1896,Athens,Greece,"Athens, Greece",37.9755648,23.7348324,nominatim,ok,2025-11-25T17:55:04.898Z
+1900|Paris|France,1900,Paris,France,"Paris, France",48.8534951,2.3483915,nominatim,ok,2025-11-25T17:55:06.527Z
+1904|St. Louis|United States,1904,St. Louis,United States,"Saint Louis, United States",38.6280278,-90.1910154,nominatim,ok,2025-11-25T17:55:07.703Z
+1908|London|United Kingdom,1908,London,United Kingdom,"London, United Kingdom",51.5074456,-0.1277653,nominatim,ok,2025-11-25T17:55:08.881Z
+1912|Stockholm|Sweden,1912,Stockholm,Sweden,"Stockholm, Sweden",59.3251172,18.0710935,nominatim,ok,2025-11-25T17:55:10.010Z
+1916|Berlin|Germany,1916,Berlin,Germany,"Berlin, Germany",52.5173885,13.3951309,nominatim,ok,2025-11-25T17:55:11.125Z
+1920|Antwerp|Belgium,1920,Antwerp,Belgium,"Antwerp, Belgium",51.2211097,4.3997081,nominatim,ok,2025-11-25T17:55:12.240Z
+1924|Chamonix|France,1924,Chamonix,France,"Chamonix, France",45.9246705,6.8727506,nominatim,ok,2025-11-25T17:55:13.345Z
+1924|Paris|S008 VIII,1924,Paris,S008 VIII,"Paris, France",48.8534951,2.3483915,nominatim,ok,2025-11-25T17:55:14.475Z
+1928|St. Moritz|Switzerland,1928,St. Moritz,Switzerland,"Saint Moritz, Switzerland",46.4978958,9.8392428,nominatim,ok,2025-11-25T17:55:15.625Z
+1928|Amsterdam|Netherlands,1928,Amsterdam,Netherlands,"Amsterdam, Netherlands",52.3730796,4.8924534,nominatim,ok,2025-11-25T17:55:16.732Z
+1932|Lake Placid|United States,1932,Lake Placid,United States,"Lake Placid, New York, United States",44.2831194,-73.9828318,nominatim,ok,2025-11-25T17:55:17.849Z
+1932|Los Angeles|S010 X,1932,Los Angeles,S010 X,"Los Angeles, United States",34.0536909,-118.242766,nominatim,ok,2025-11-25T17:55:18.972Z
+1936|Garmisch-Partenkirchen|Germany,1936,Garmisch-Partenkirchen,Germany,"Garmisch-Partenkirchen, Germany",47.4923741,11.0962815,nominatim,ok,2025-11-25T17:55:20.172Z
+1936|Berlin|S011 XI,1936,Berlin,S011 XI,"Berlin, Germany",52.5173885,13.3951309,nominatim,ok,2025-11-25T17:55:21.302Z
+1940|Sapporo Garmisch-Partenkirchen|Japan Germany,1940,Sapporo Garmisch-Partenkirchen,Japan Germany,"Sapporo, Japan",43.061936,141.3542924,nominatim,ok,2025-11-25T17:55:22.496Z
+1944|Cortina d'Ampezzo|Italy,1944,Cortina d'Ampezzo,Italy,"Cortina d'Ampezzo, Italy",46.5383332,12.1373506,nominatim,ok,2025-11-25T17:55:23.666Z
+1948|St. Moritz|Switzerland,1948,St. Moritz,Switzerland,"Saint Moritz, Switzerland",46.4978958,9.8392428,nominatim,ok,2025-11-25T17:55:24.780Z
+1948|London|United Kingdom,1948,London,United Kingdom,"London, United Kingdom",51.5074456,-0.1277653,nominatim,ok,2025-11-25T17:55:25.900Z
+1952|Oslo|Norway,1952,Oslo,Norway,"Oslo, Norway",59.9133301,10.7389701,nominatim,ok,2025-11-25T17:55:27.420Z
+1952|Helsinki|Finland,1952,Helsinki,Finland,"Helsinki, Finland",60.1698897,24.9384719,nominatim,ok,2025-11-25T17:55:28.675Z
+1956|Cortina d'Ampezzo|Italy,1956,Cortina d'Ampezzo,Italy,"Cortina d'Ampezzo, Italy",46.5383332,12.1373506,nominatim,ok,2025-11-25T17:55:29.809Z
+1956|Melbourne Stockholm|Australia Sweden,1956,Melbourne Stockholm,Australia Sweden,"Melbourne, Australia",-37.8142454,144.9631732,nominatim,ok,2025-11-25T17:55:30.916Z
+1960|Squaw Valley|United States,1960,Squaw Valley,United States,"Payette, Idaho, United States",44.0374651,-116.7651123,nominatim,ok,2025-11-25T17:55:32.030Z
+1960|Rome|Italy,1960,Rome,Italy,"Rome, Italy",41.8933203,12.4829321,nominatim,ok,2025-11-25T17:55:33.200Z
+1964|Innsbruck|Austria,1964,Innsbruck,Austria,"Innsbruck, Austria",47.2654296,11.3927685,nominatim,ok,2025-11-25T17:55:34.340Z
+1964|Tokyo|Japan,1964,Tokyo,Japan,"Tokyo, Japan",35.6768601,139.7638947,nominatim,ok,2025-11-25T17:55:35.443Z
+1968|Grenoble|France,1968,Grenoble,France,"Grenoble, France",45.1875602,5.7357819,nominatim,ok,2025-11-25T17:55:36.550Z
+1968|Mexico City|Mexico,1968,Mexico City,Mexico,"Mexico City, Mexico",19.4326296,-99.1331785,nominatim,ok,2025-11-25T17:55:37.653Z
+1972|Sapporo|Japan,1972,Sapporo,Japan,"Sapporo, Japan",43.061936,141.3542924,nominatim,ok,2025-11-25T17:55:38.770Z
+1972|Munich|West Germany,1972,Munich,West Germany,"Munich, Germany",48.1371079,11.5753822,nominatim,ok,2025-11-25T17:55:40.012Z
+1976|Innsbruck|Austria,1976,Innsbruck,Austria,"Innsbruck, Austria",47.2654296,11.3927685,nominatim,ok,2025-11-25T17:55:41.273Z
+1976|Montreal|Canada,1976,Montreal,Canada,"Montreal, Canada",45.5031824,-73.5698065,nominatim,ok,2025-11-25T17:55:42.378Z
+1980|Lake Placid|United States,1980,Lake Placid,United States,"Lake Placid, New York, United States",44.2831194,-73.9828318,nominatim,ok,2025-11-25T17:55:43.487Z
+1980|Moscow|Soviet Union,1980,Moscow,Soviet Union,"Moscow, Russia",55.7505412,37.6174782,nominatim,ok,2025-11-25T17:55:44.648Z
+1984|Sarajevo|Yugoslavia,1984,Sarajevo,Yugoslavia,"Sarajevo, Bosnia, Serbia",43.8602356,18.4302782,nominatim,ok,2025-11-25T17:55:45.799Z
+1984|Los Angeles|United States,1984,Los Angeles,United States,"Los Angeles, United States",34.0536909,-118.242766,nominatim,ok,2025-11-25T17:55:47.113Z
+1988|Calgary|Canada,1988,Calgary,Canada,"Calgary, Canada",51.0456064,-114.057541,nominatim,ok,2025-11-25T17:55:48.226Z
+1988|Seoul|South Korea,1988,Seoul,South Korea,"Seoul, South Korea",37.5666791,126.9782914,nominatim,ok,2025-11-25T17:55:49.440Z
+1992|Albertville|France,1992,Albertville,France,"Albertville, France",45.6754622,6.3925417,nominatim,ok,2025-11-25T17:55:50.603Z
+1992|Barcelona|Spain,1992,Barcelona,Spain,"Barcelona, Spain",41.3825802,2.177073,nominatim,ok,2025-11-25T17:55:51.708Z
+1994|Lillehammer|Norway,1994,Lillehammer,Norway,"Lillehammer, Norway, Norway",61.1333408,10.426585544131413,nominatim,ok,2025-11-25T17:55:52.853Z
+1996|Atlanta|United States,1996,Atlanta,United States,"Atlanta, United States",33.7544657,-84.3898151,nominatim,ok,2025-11-25T17:55:53.995Z
+1998|Nagano|Japan,1998,Nagano,Japan,"Nagano, Japan",36.6485851,138.1947664,nominatim,ok,2025-11-25T17:55:55.130Z
+2000|Sydney|Australia,2000,Sydney,Australia,"Sydney, Australia",-33.8698439,151.2082848,nominatim,ok,2025-11-25T17:55:56.354Z
+2002|Salt Lake City|United States,2002,Salt Lake City,United States,"Salt Lake City, Utah, United States",40.7596198,-111.886797,nominatim,ok,2025-11-25T17:55:57.464Z
+2004|Athens|Greece,2004,Athens,Greece,"Athens, Greece",37.9755648,23.7348324,nominatim,ok,2025-11-25T17:55:58.595Z
+2006|Turin|Italy,2006,Turin,Italy,"Turin, Italy",45.0677551,7.6824892,nominatim,ok,2025-11-25T17:55:59.696Z
+2008|Beijing|China,2008,Beijing,China,"Beijing, China",39.9057136,116.3912972,nominatim,ok,2025-11-25T17:56:00.799Z
+2010|Vancouver|Canada,2010,Vancouver,Canada,"Vancouver, Canada",49.2608724,-123.113952,nominatim,ok,2025-11-25T17:56:01.989Z
+2012|London|United Kingdom,2012,London,United Kingdom,"London, United Kingdom",51.5074456,-0.1277653,nominatim,ok,2025-11-25T17:56:03.143Z
+2014|Sochi|Russia,2014,Sochi,Russia,"Sochi, Russia",43.5854823,39.723109,nominatim,ok,2025-11-25T17:56:04.510Z
+2016|Rio de Janeiro|Brazil,2016,Rio de Janeiro,Brazil,"Rio de Janeiro, Brazil",-22.9110137,-43.2093727,nominatim,ok,2025-11-25T17:56:05.801Z
+2018|Pyeongchang|South Korea,2018,Pyeongchang,South Korea,"Pyeongchang, South Korea, South Korea",37.3705,128.3903,nominatim,ok,2025-11-25T17:56:07.386Z
+2020|Tokyo|Japan,2020,Tokyo,Japan,"Tokyo, Japan",35.6768601,139.7638947,nominatim,ok,2025-11-25T17:56:09.229Z
+2022|Beijing|China,2022,Beijing,China,"Beijing, China",39.9057136,116.3912972,nominatim,ok,2025-11-25T17:56:11.396Z
+2024|Paris|France,2024,Paris,France,"Paris, France",48.8534951,2.3483915,nominatim,ok,2025-11-25T17:56:14.391Z
+2026|Milan Cortina d'Ampezzo|Italy,2026,Milan Cortina d'Ampezzo,Italy,"Milan, Italy",45.4641943,9.1896346,nominatim,ok,2025-11-25T17:56:16.273Z
+2028|Los Angeles|United States,2028,Los Angeles,United States,"Los Angeles, United States",34.0536909,-118.242766,nominatim,ok,2025-11-25T17:56:18.611Z
+2030|French Alps|France,2030,French Alps,France,"French Alps, France",43.9525507,7.479428251496097,nominatim,ok,2025-11-25T17:56:21.096Z
+2032|Brisbane|Australia,2032,Brisbane,Australia,"Brisbane, Australia",-27.4689623,153.0235009,nominatim,ok,2025-11-25T17:56:22.849Z
+2034|Salt Lake City|United States,2034,Salt Lake City,United States,"Salt Lake City, Utah, United States",40.7596198,-111.886797,nominatim,ok,2025-11-25T17:56:24.209Z

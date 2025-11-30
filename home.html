@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Olympic Host Cities — Home</title>
+  <meta name="description" content="Explore Olympic host cities with an interactive map and downloadable datasets." />
+  <style>
+    :root {
+      --bg: #0b0f13; --card: #0f141a; --text: #e6eef6; --muted:#9fb1c3;
+      --accent: #3aa0ff; --accent-2:#9bdbff; --border: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box }
+    html, body { height: 100% }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background: var(--bg); color: var(--text); }
+    a { color: var(--accent) }
+    header { position: sticky; top:0; backdrop-filter: blur(8px); background: rgba(11,15,19,0.7); border-bottom: 1px solid var(--border) }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 16px; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:16px }
+    .nav a { text-decoration: none; margin: 0 8px; color: var(--text); opacity: .9 }
+    .nav a:hover { opacity: 1 }
+    .hero { padding: 64px 16px 32px }
+    .hero h1 { font-size: clamp(28px, 6vw, 44px); margin: 0 0 12px }
+    .hero p { color: var(--muted); font-size: 16px; margin: 0 0 24px }
+    .cta { display:flex; flex-wrap:wrap; gap:12px }
+    .btn { display:inline-flex; align-items:center; gap:8px; padding: 10px 14px; border:1px solid var(--border); border-radius: 10px; text-decoration:none; color: var(--text); background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01)); }
+    .btn.primary { background: linear-gradient(180deg, rgba(58,160,255,0.2), rgba(58,160,255,0.08)); border-color: rgba(58,160,255,0.5) }
+    .grid { display:grid; grid-template-columns: repeat(12,minmax(0,1fr)); gap:16px }
+    .card { grid-column: span 12; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px }
+    @media(min-width: 720px) { .card.half { grid-column: span 6 } }
+    .kpis { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px }
+    @media(min-width: 720px) { .kpis { grid-template-columns: repeat(4, minmax(0,1fr)) } }
+    .kpi { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 12px }
+    .kpi .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em }
+    .kpi .value { font-size: 22px; font-weight: 600; margin-top: 6px }
+    footer { border-top: 1px solid var(--border); margin-top: 32px; color: var(--muted); font-size: 13px }
+    code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 6px; border: 1px solid var(--border) }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="width:10px;height:10px;border-radius:50%;background:var(--accent)"></div>
+        <strong>Olympic Host Cities</strong>
+      </div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="index.html">Map</a>
+        <a href="data/olympics_games_geocoded.csv" download>CSV</a>
+        <a href="data/olympics_games_geocoded.json" download>JSON</a>
+        <a href="https://github.com/BillZohos/Final_Project" target="_blank" rel="noopener">Repo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Explore Olympic Host Cities</h1>
+      <p>Interactive map and open datasets of Summer and Winter Olympic Games through Paris 2024 — complete with coordinates for quick mapping and analysis.</p>
+      <div class="cta">
+        <a class="btn primary" href="index.html">View Interactive Map</a>
+        <a class="btn" href="data/olympics_games_geocoded.csv" download>Download CSV</a>
+        <a class="btn" href="data/olympics_games_geocoded.json" download>Download JSON</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3 style="margin:0 0 12px">Key stats</h3>
+        <div class="kpis">
+          <div class="kpi"><div class="label">Total Games</div><div id="kpiTotal" class="value">—</div></div>
+          <div class="kpi"><div class="label">Summer</div><div id="kpiSummer" class="value">—</div></div>
+          <div class="kpi"><div class="label">Winter</div><div id="kpiWinter" class="value">—</div></div>
+          <div class="kpi"><div class="label">Countries</div><div id="kpiCountries" class="value">—</div></div>
+        </div>
+      </div>
+      <div class="card half">
+        <h3 style="margin:0 0 8px">About</h3>
+        <p style="color:var(--muted);margin:0">This project compiles a clean list of Olympic host cities, geocoded for visualization. Data sources include Wikipedia, transformed via scripts in this repo. The map uses Leaflet with clustered markers and simple filters.</p>
+      </div>
+      <div class="card half">
+        <h3 style="margin:0 0 8px">How to use</h3>
+        <ul style="margin:0 0 0 16px;line-height:1.6">
+          <li>Open the Map to browse hosts by year and search by city/country.</li>
+          <li>Download CSV or JSON to analyze in your own tools.</li>
+          <li>Cancelled years (1916, 1940, 1944) are excluded from map markers.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="wrap" style="padding:16px">
+      <div>Data: <code>data/olympics_games_geocoded.json</code> • Map: <a href="index.html">Leaflet view</a></div>
+    </footer>
+  </main>
+
+  <script>
+    const DATA_PATH = 'data/olympics_games_geocoded.json';
+    async function loadStats() {
+      try {
+        const res = await fetch(DATA_PATH);
+        const data = await res.json();
+        const items = Object.values(data);
+        const total = items.length;
+        const summer = items.filter(i => i.season === 'Summer').length;
+        const winter = items.filter(i => i.season === 'Winter').length;
+        const countries = new Set(items.map(i => (i.country||'').trim()).filter(Boolean));
+        document.getElementById('kpiTotal').textContent = String(total);
+        document.getElementById('kpiSummer').textContent = String(summer);
+        document.getElementById('kpiWinter').textContent = String(winter);
+        document.getElementById('kpiCountries').textContent = String(countries.size);
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    loadStats();
+  </script>
+</body>
+</html>

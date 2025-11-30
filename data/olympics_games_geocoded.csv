@@ -1,0 +1,58 @@
+Year,City,Country,Season,Notes,lat,lon,geocode_provider
+1896,Athens,Greece,Summer,,37.9755648,23.7348324,nominatim
+1900,Paris,France,Summer,,48.8534951,2.3483915,nominatim
+1904,St. Louis,United States,Summer,,38.6280278,-90.1910154,nominatim
+1908,London,United Kingdom,Summer,,51.5074456,-0.1277653,nominatim
+1912,Stockholm,Sweden,Summer,,59.3251172,18.0710935,nominatim
+1916,Berlin,Germany,Summer,,52.5173885,13.3951309,nominatim
+1920,Antwerp,Belgium,Summer,,51.2211097,4.3997081,nominatim
+1924,Chamonix,France,Winter,,45.9246705,6.8727506,nominatim
+1924,Paris,S008 VIII,Winter,,48.8534951,2.3483915,nominatim
+1928,Amsterdam,Netherlands,Winter,,52.3730796,4.8924534,nominatim
+1928,St. Moritz,Switzerland,Winter,,46.4978958,9.8392428,nominatim
+1932,Lake Placid,United States,Winter,,44.2831194,-73.9828318,nominatim
+1932,Los Angeles,S010 X,Winter,,34.0536909,-118.242766,nominatim
+1936,Berlin,S011 XI,Winter,,52.5173885,13.3951309,nominatim
+1936,Garmisch-Partenkirchen,Germany,Winter,,47.4923741,11.0962815,nominatim
+1940,Sapporo Garmisch-Partenkirchen,Japan Germany,Summer,,43.061936,141.3542924,nominatim
+1944,Cortina d'Ampezzo,Italy,Summer,,46.5383332,12.1373506,nominatim
+1948,London,United Kingdom,Winter,,51.5074456,-0.1277653,nominatim
+1948,St. Moritz,Switzerland,Winter,,46.4978958,9.8392428,nominatim
+1952,Helsinki,Finland,Winter,,60.1698897,24.9384719,nominatim
+1952,Oslo,Norway,Winter,,59.9133301,10.7389701,nominatim
+1956,Cortina d'Ampezzo,Italy,Winter,,46.5383332,12.1373506,nominatim
+1956,Melbourne Stockholm,Australia Sweden,Winter,,-37.8142454,144.9631732,nominatim
+1960,Rome,Italy,Winter,,41.8933203,12.4829321,nominatim
+1960,Squaw Valley,United States,Winter,,44.0374651,-116.7651123,nominatim
+1964,Innsbruck,Austria,Winter,,47.2654296,11.3927685,nominatim
+1964,Tokyo,Japan,Winter,,35.6768601,139.7638947,nominatim
+1968,Grenoble,France,Winter,,45.1875602,5.7357819,nominatim
+1968,Mexico City,Mexico,Winter,,19.4326296,-99.1331785,nominatim
+1972,Munich,West Germany,Winter,,48.1371079,11.5753822,nominatim
+1972,Sapporo,Japan,Winter,,43.061936,141.3542924,nominatim
+1976,Innsbruck,Austria,Winter,,47.2654296,11.3927685,nominatim
+1976,Montreal,Canada,Winter,,45.5031824,-73.5698065,nominatim
+1980,Lake Placid,United States,Winter,,44.2831194,-73.9828318,nominatim
+1980,Moscow,Soviet Union,Winter,,55.7505412,37.6174782,nominatim
+1984,Los Angeles,United States,Winter,,34.0536909,-118.242766,nominatim
+1984,Sarajevo,Yugoslavia,Winter,,43.8602356,18.4302782,nominatim
+1988,Calgary,Canada,Winter,,51.0456064,-114.057541,nominatim
+1988,Seoul,South Korea,Winter,,37.5666791,126.9782914,nominatim
+1992,Albertville,France,Winter,,45.6754622,6.3925417,nominatim
+1992,Barcelona,Spain,Winter,,41.3825802,2.177073,nominatim
+1994,Lillehammer,Norway,Winter,,61.1333408,10.426585544131413,nominatim
+1996,Atlanta,United States,Summer,,33.7544657,-84.3898151,nominatim
+1998,Nagano,Japan,Winter,,36.6485851,138.1947664,nominatim
+2000,Sydney,Australia,Summer,,-33.8698439,151.2082848,nominatim
+2002,Salt Lake City,United States,Winter,,40.7596198,-111.886797,nominatim
+2004,Athens,Greece,Summer,,37.9755648,23.7348324,nominatim
+2006,Turin,Italy,Winter,,45.0677551,7.6824892,nominatim
+2008,Beijing,China,Summer,,39.9057136,116.3912972,nominatim
+2010,Vancouver,Canada,Winter,,49.2608724,-123.113952,nominatim
+2012,London,United Kingdom,Summer,,51.5074456,-0.1277653,nominatim
+2014,Sochi,Russia,Winter,,43.5854823,39.723109,nominatim
+2016,Rio de Janeiro,Brazil,Summer,,-22.9110137,-43.2093727,nominatim
+2018,Pyeongchang,South Korea,Winter,,37.3705,128.3903,nominatim
+2020,Tokyo,Japan,Summer,,35.6768601,139.7638947,nominatim
+2022,Beijing,China,Winter,,39.9057136,116.3912972,nominatim
+2024,Paris,France,Summer,,48.8534951,2.3483915,nominatim

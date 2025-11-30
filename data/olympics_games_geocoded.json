@@ -1,0 +1,572 @@
+{
+  "1896|Athens|Greece": {
+    "year": 1896,
+    "city": "Athens",
+    "country": "Greece",
+    "season": "Summer",
+    "notes": "",
+    "lat": 37.9755648,
+    "lon": 23.7348324,
+    "geocode_provider": "nominatim"
+  },
+  "1900|Paris|France": {
+    "year": 1900,
+    "city": "Paris",
+    "country": "France",
+    "season": "Summer",
+    "notes": "",
+    "lat": 48.8534951,
+    "lon": 2.3483915,
+    "geocode_provider": "nominatim"
+  },
+  "1904|St. Louis|United States": {
+    "year": 1904,
+    "city": "St. Louis",
+    "country": "United States",
+    "season": "Summer",
+    "notes": "",
+    "lat": 38.6280278,
+    "lon": -90.1910154,
+    "geocode_provider": "nominatim"
+  },
+  "1908|London|United Kingdom": {
+    "year": 1908,
+    "city": "London",
+    "country": "United Kingdom",
+    "season": "Summer",
+    "notes": "",
+    "lat": 51.5074456,
+    "lon": -0.1277653,
+    "geocode_provider": "nominatim"
+  },
+  "1912|Stockholm|Sweden": {
+    "year": 1912,
+    "city": "Stockholm",
+    "country": "Sweden",
+    "season": "Summer",
+    "notes": "",
+    "lat": 59.3251172,
+    "lon": 18.0710935,
+    "geocode_provider": "nominatim"
+  },
+  "1916|Berlin|Germany": {
+    "year": 1916,
+    "city": "Berlin",
+    "country": "Germany",
+    "season": "Summer",
+    "notes": "",
+    "lat": 52.5173885,
+    "lon": 13.3951309,
+    "geocode_provider": "nominatim"
+  },
+  "1920|Antwerp|Belgium": {
+    "year": 1920,
+    "city": "Antwerp",
+    "country": "Belgium",
+    "season": "Summer",
+    "notes": "",
+    "lat": 51.2211097,
+    "lon": 4.3997081,
+    "geocode_provider": "nominatim"
+  },
+  "1924|Chamonix|France": {
+    "year": 1924,
+    "city": "Chamonix",
+    "country": "France",
+    "season": "Winter",
+    "notes": "",
+    "lat": 45.9246705,
+    "lon": 6.8727506,
+    "geocode_provider": "nominatim"
+  },
+  "1924|Paris|S008 VIII": {
+    "year": 1924,
+    "city": "Paris",
+    "country": "S008 VIII",
+    "season": "Winter",
+    "notes": "",
+    "lat": 48.8534951,
+    "lon": 2.3483915,
+    "geocode_provider": "nominatim"
+  },
+  "1928|Amsterdam|Netherlands": {
+    "year": 1928,
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "season": "Winter",
+    "notes": "",
+    "lat": 52.3730796,
+    "lon": 4.8924534,
+    "geocode_provider": "nominatim"
+  },
+  "1928|St. Moritz|Switzerland": {
+    "year": 1928,
+    "city": "St. Moritz",
+    "country": "Switzerland",
+    "season": "Winter",
+    "notes": "",
+    "lat": 46.4978958,
+    "lon": 9.8392428,
+    "geocode_provider": "nominatim"
+  },
+  "1932|Lake Placid|United States": {
+    "year": 1932,
+    "city": "Lake Placid",
+    "country": "United States",
+    "season": "Winter",
+    "notes": "",
+    "lat": 44.2831194,
+    "lon": -73.9828318,
+    "geocode_provider": "nominatim"
+  },
+  "1932|Los Angeles|S010 X": {
+    "year": 1932,
+    "city": "Los Angeles",
+    "country": "S010 X",
+    "season": "Winter",
+    "notes": "",
+    "lat": 34.0536909,
+    "lon": -118.242766,
+    "geocode_provider": "nominatim"
+  },
+  "1936|Berlin|S011 XI": {
+    "year": 1936,
+    "city": "Berlin",
+    "country": "S011 XI",
+    "season": "Winter",
+    "notes": "",
+    "lat": 52.5173885,
+    "lon": 13.3951309,
+    "geocode_provider": "nominatim"
+  },
+  "1936|Garmisch-Partenkirchen|Germany": {
+    "year": 1936,
+    "city": "Garmisch-Partenkirchen",
+    "country": "Germany",
+    "season": "Winter",
+    "notes": "",
+    "lat": 47.4923741,
+    "lon": 11.0962815,
+    "geocode_provider": "nominatim"
+  },
+  "1940|Sapporo Garmisch-Partenkirchen|Japan Germany": {
+    "year": 1940,
+    "city": "Sapporo Garmisch-Partenkirchen",
+    "country": "Japan Germany",
+    "season": "Summer",
+    "notes": "",
+    "lat": 43.061936,
+    "lon": 141.3542924,
+    "geocode_provider": "nominatim"
+  },
+  "1944|Cortina d'Ampezzo|Italy": {
+    "year": 1944,
+    "city": "Cortina d'Ampezzo",
+    "country": "Italy",
+    "season": "Summer",
+    "notes": "",
+    "lat": 46.5383332,
+    "lon": 12.1373506,
+    "geocode_provider": "nominatim"
+  },
+  "1948|London|United Kingdom": {
+    "year": 1948,
+    "city": "London",
+    "country": "United Kingdom",
+    "season": "Winter",
+    "notes": "",
+    "lat": 51.5074456,
+    "lon": -0.1277653,
+    "geocode_provider": "nominatim"
+  },
+  "1948|St. Moritz|Switzerland": {
+    "year": 1948,
+    "city": "St. Moritz",
+    "country": "Switzerland",
+    "season": "Winter",
+    "notes": "",
+    "lat": 46.4978958,
+    "lon": 9.8392428,
+    "geocode_provider": "nominatim"
+  },
+  "1952|Helsinki|Finland": {
+    "year": 1952,
+    "city": "Helsinki",
+    "country": "Finland",
+    "season": "Winter",
+    "notes": "",
+    "lat": 60.1698897,
+    "lon": 24.9384719,
+    "geocode_provider": "nominatim"
+  },
+  "1952|Oslo|Norway": {
+    "year": 1952,
+    "city": "Oslo",
+    "country": "Norway",
+    "season": "Winter",
+    "notes": "",
+    "lat": 59.9133301,
+    "lon": 10.7389701,
+    "geocode_provider": "nominatim"
+  },
+  "1956|Cortina d'Ampezzo|Italy": {
+    "year": 1956,
+    "city": "Cortina d'Ampezzo",
+    "country": "Italy",
+    "season": "Winter",
+    "notes": "",
+    "lat": 46.5383332,
+    "lon": 12.1373506,
+    "geocode_provider": "nominatim"
+  },
+  "1956|Melbourne Stockholm|Australia Sweden": {
+    "year": 1956,
+    "city": "Melbourne Stockholm",
+    "country": "Australia Sweden",
+    "season": "Winter",
+    "notes": "",
+    "lat": -37.8142454,
+    "lon": 144.9631732,
+    "geocode_provider": "nominatim"
+  },
+  "1960|Rome|Italy": {
+    "year": 1960,
+    "city": "Rome",
+    "country": "Italy",
+    "season": "Winter",
+    "notes": "",
+    "lat": 41.8933203,
+    "lon": 12.4829321,
+    "geocode_provider": "nominatim"
+  },
+  "1960|Squaw Valley|United States": {
+    "year": 1960,
+    "city": "Squaw Valley",
+    "country": "United States",
+    "season": "Winter",
+    "notes": "",
+    "lat": 44.0374651,
+    "lon": -116.7651123,
+    "geocode_provider": "nominatim"
+  },
+  "1964|Innsbruck|Austria": {
+    "year": 1964,
+    "city": "Innsbruck",
+    "country": "Austria",
+    "season": "Winter",
+    "notes": "",
+    "lat": 47.2654296,
+    "lon": 11.3927685,
+    "geocode_provider": "nominatim"
+  },
+  "1964|Tokyo|Japan": {
+    "year": 1964,
+    "city": "Tokyo",
+    "country": "Japan",
+    "season": "Winter",
+    "notes": "",
+    "lat": 35.6768601,
+    "lon": 139.7638947,
+    "geocode_provider": "nominatim"
+  },
+  "1968|Grenoble|France": {
+    "year": 1968,
+    "city": "Grenoble",
+    "country": "France",
+    "season": "Winter",
+    "notes": "",
+    "lat": 45.1875602,
+    "lon": 5.7357819,
+    "geocode_provider": "nominatim"
+  },
+  "1968|Mexico City|Mexico": {
+    "year": 1968,
+    "city": "Mexico City",
+    "country": "Mexico",
+    "season": "Winter",
+    "notes": "",
+    "lat": 19.4326296,
+    "lon": -99.1331785,
+    "geocode_provider": "nominatim"
+  },
+  "1972|Munich|West Germany": {
+    "year": 1972,
+    "city": "Munich",
+    "country": "West Germany",
+    "season": "Winter",
+    "notes": "",
+    "lat": 48.1371079,
+    "lon": 11.5753822,
+    "geocode_provider": "nominatim"
+  },
+  "1972|Sapporo|Japan": {
+    "year": 1972,
+    "city": "Sapporo",
+    "country": "Japan",
+    "season": "Winter",
+    "notes": "",
+    "lat": 43.061936,
+    "lon": 141.3542924,
+    "geocode_provider": "nominatim"
+  },
+  "1976|Innsbruck|Austria": {
+    "year": 1976,
+    "city": "Innsbruck",
+    "country": "Austria",
+    "season": "Winter",
+    "notes": "",
+    "lat": 47.2654296,
+    "lon": 11.3927685,
+    "geocode_provider": "nominatim"
+  },
+  "1976|Montreal|Canada": {
+    "year": 1976,
+    "city": "Montreal",
+    "country": "Canada",
+    "season": "Winter",
+    "notes": "",
+    "lat": 45.5031824,
+    "lon": -73.5698065,
+    "geocode_provider": "nominatim"
+  },
+  "1980|Lake Placid|United States": {
+    "year": 1980,
+    "city": "Lake Placid",
+    "country": "United States",
+    "season": "Winter",
+    "notes": "",
+    "lat": 44.2831194,
+    "lon": -73.9828318,
+    "geocode_provider": "nominatim"
+  },
+  "1980|Moscow|Soviet Union": {
+    "year": 1980,
+    "city": "Moscow",
+    "country": "Soviet Union",
+    "season": "Winter",
+    "notes": "",
+    "lat": 55.7505412,
+    "lon": 37.6174782,
+    "geocode_provider": "nominatim"
+  },
+  "1984|Los Angeles|United States": {
+    "year": 1984,
+    "city": "Los Angeles",
+    "country": "United States",
+    "season": "Winter",
+    "notes": "",
+    "lat": 34.0536909,
+    "lon": -118.242766,
+    "geocode_provider": "nominatim"
+  },
+  "1984|Sarajevo|Yugoslavia": {
+    "year": 1984,
+    "city": "Sarajevo",
+    "country": "Yugoslavia",
+    "season": "Winter",
+    "notes": "",
+    "lat": 43.8602356,
+    "lon": 18.4302782,
+    "geocode_provider": "nominatim"
+  },
+  "1988|Calgary|Canada": {
+    "year": 1988,
+    "city": "Calgary",
+    "country": "Canada",
+    "season": "Winter",
+    "notes": "",
+    "lat": 51.0456064,
+    "lon": -114.057541,
+    "geocode_provider": "nominatim"
+  },
+  "1988|Seoul|South Korea": {
+    "year": 1988,
+    "city": "Seoul",
+    "country": "South Korea",
+    "season": "Winter",
+    "notes": "",
+    "lat": 37.5666791,
+    "lon": 126.9782914,
+    "geocode_provider": "nominatim"
+  },
+  "1992|Albertville|France": {
+    "year": 1992,
+    "city": "Albertville",
+    "country": "France",
+    "season": "Winter",
+    "notes": "",
+    "lat": 45.6754622,
+    "lon": 6.3925417,
+    "geocode_provider": "nominatim"
+  },
+  "1992|Barcelona|Spain": {
+    "year": 1992,
+    "city": "Barcelona",
+    "country": "Spain",
+    "season": "Winter",
+    "notes": "",
+    "lat": 41.3825802,
+    "lon": 2.177073,
+    "geocode_provider": "nominatim"
+  },
+  "1994|Lillehammer|Norway": {
+    "year": 1994,
+    "city": "Lillehammer",
+    "country": "Norway",
+    "season": "Winter",
+    "notes": "",
+    "lat": 61.1333408,
+    "lon": 10.426585544131413,
+    "geocode_provider": "nominatim"
+  },
+  "1996|Atlanta|United States": {
+    "year": 1996,
+    "city": "Atlanta",
+    "country": "United States",
+    "season": "Summer",
+    "notes": "",
+    "lat": 33.7544657,
+    "lon": -84.3898151,
+    "geocode_provider": "nominatim"
+  },
+  "1998|Nagano|Japan": {
+    "year": 1998,
+    "city": "Nagano",
+    "country": "Japan",
+    "season": "Winter",
+    "notes": "",
+    "lat": 36.6485851,
+    "lon": 138.1947664,
+    "geocode_provider": "nominatim"
+  },
+  "2000|Sydney|Australia": {
+    "year": 2000,
+    "city": "Sydney",
+    "country": "Australia",
+    "season": "Summer",
+    "notes": "",
+    "lat": -33.8698439,
+    "lon": 151.2082848,
+    "geocode_provider": "nominatim"
+  },
+  "2002|Salt Lake City|United States": {
+    "year": 2002,
+    "city": "Salt Lake City",
+    "country": "United States",
+    "season": "Winter",
+    "notes": "",
+    "lat": 40.7596198,
+    "lon": -111.886797,
+    "geocode_provider": "nominatim"
+  },
+  "2004|Athens|Greece": {
+    "year": 2004,
+    "city": "Athens",
+    "country": "Greece",
+    "season": "Summer",
+    "notes": "",
+    "lat": 37.9755648,
+    "lon": 23.7348324,
+    "geocode_provider": "nominatim"
+  },
+  "2006|Turin|Italy": {
+    "year": 2006,
+    "city": "Turin",
+    "country": "Italy",
+    "season": "Winter",
+    "notes": "",
+    "lat": 45.0677551,
+    "lon": 7.6824892,
+    "geocode_provider": "nominatim"
+  },
+  "2008|Beijing|China": {
+    "year": 2008,
+    "city": "Beijing",
+    "country": "China",
+    "season": "Summer",
+    "notes": "",
+    "lat": 39.9057136,
+    "lon": 116.3912972,
+    "geocode_provider": "nominatim"
+  },
+  "2010|Vancouver|Canada": {
+    "year": 2010,
+    "city": "Vancouver",
+    "country": "Canada",
+    "season": "Winter",
+    "notes": "",
+    "lat": 49.2608724,
+    "lon": -123.113952,
+    "geocode_provider": "nominatim"
+  },
+  "2012|London|United Kingdom": {
+    "year": 2012,
+    "city": "London",
+    "country": "United Kingdom",
+    "season": "Summer",
+    "notes": "",
+    "lat": 51.5074456,
+    "lon": -0.1277653,
+    "geocode_provider": "nominatim"
+  },
+  "2014|Sochi|Russia": {
+    "year": 2014,
+    "city": "Sochi",
+    "country": "Russia",
+    "season": "Winter",
+    "notes": "",
+    "lat": 43.5854823,
+    "lon": 39.723109,
+    "geocode_provider": "nominatim"
+  },
+  "2016|Rio de Janeiro|Brazil": {
+    "year": 2016,
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "season": "Summer",
+    "notes": "",
+    "lat": -22.9110137,
+    "lon": -43.2093727,
+    "geocode_provider": "nominatim"
+  },
+  "2018|Pyeongchang|South Korea": {
+    "year": 2018,
+    "city": "Pyeongchang",
+    "country": "South Korea",
+    "season": "Winter",
+    "notes": "",
+    "lat": 37.3705,
+    "lon": 128.3903,
+    "geocode_provider": "nominatim"
+  },
+  "2020|Tokyo|Japan": {
+    "year": 2020,
+    "city": "Tokyo",
+    "country": "Japan",
+    "season": "Summer",
+    "notes": "",
+    "lat": 35.6768601,
+    "lon": 139.7638947,
+    "geocode_provider": "nominatim"
+  },
+  "2022|Beijing|China": {
+    "year": 2022,
+    "city": "Beijing",
+    "country": "China",
+    "season": "Winter",
+    "notes": "",
+    "lat": 39.9057136,
+    "lon": 116.3912972,
+    "geocode_provider": "nominatim"
+  },
+  "2024|Paris|France": {
+    "year": 2024,
+    "city": "Paris",
+    "country": "France",
+    "season": "Summer",
+    "notes": "",
+    "lat": 48.8534951,
+    "lon": 2.3483915,
+    "geocode_provider": "nominatim"
+  }
+}

@@ -1,0 +1,2109 @@
+{
+  "1896|Athens|Greece": {
+    "key": "1896|Athens|Greece",
+    "year": "1896",
+    "city": "Athens",
+    "country": "Greece",
+    "query": "Athens, Greece",
+    "lat": 37.9755648,
+    "lon": 23.7348324,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:04.898Z",
+    "raw": {
+      "lon": 23.7348324,
+      "lat": 37.9755648,
+      "display_name": "Athens",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 441183,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "postcode": "105 57",
+        "countrycode": "GR",
+        "name": "Athens",
+        "country": "Greece",
+        "state": "Attica",
+        "county": "Regional Unit of Central Athens"
+      }
+    }
+  },
+  "1900|Paris|France": {
+    "key": "1900|Paris|France",
+    "year": "1900",
+    "city": "Paris",
+    "country": "France",
+    "query": "Paris, France",
+    "lat": 48.8534951,
+    "lon": 2.3483915,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:06.527Z",
+    "raw": {
+      "lon": 2.3483915,
+      "lat": 48.8534951,
+      "display_name": "Paris",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 71525,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "FR",
+        "name": "Paris",
+        "country": "France",
+        "state": "Ile-de-France",
+        "extent": [
+          2.224122,
+          48.902156,
+          2.4697602,
+          48.8155755
+        ]
+      }
+    }
+  },
+  "1904|St. Louis|United States": {
+    "key": "1904|St. Louis|United States",
+    "year": "1904",
+    "city": "St. Louis",
+    "country": "United States",
+    "query": "Saint Louis, United States",
+    "lat": 38.6280278,
+    "lon": -90.1910154,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:07.703Z",
+    "raw": {
+      "lon": -90.1910154,
+      "lat": 38.6280278,
+      "display_name": "St. Louis",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1180533,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "US",
+        "name": "St. Louis",
+        "country": "United States",
+        "state": "Missouri",
+        "extent": [
+          -90.3206525,
+          38.7743018,
+          -90.1641941,
+          38.5318587
+        ]
+      }
+    }
+  },
+  "1908|London|United Kingdom": {
+    "key": "1908|London|United Kingdom",
+    "year": "1908",
+    "city": "London",
+    "country": "United Kingdom",
+    "query": "London, United Kingdom",
+    "lat": 51.5074456,
+    "lon": -0.1277653,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:08.881Z",
+    "raw": {
+      "lon": -0.1277653,
+      "lat": 51.5074456,
+      "display_name": "London",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 107775,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "district",
+        "postcode": "WC2N 5DX",
+        "countrycode": "GB",
+        "name": "London",
+        "country": "United Kingdom",
+        "city": "Westminster",
+        "state": "England",
+        "county": "Greater London"
+      }
+    }
+  },
+  "1912|Stockholm|Sweden": {
+    "key": "1912|Stockholm|Sweden",
+    "year": "1912",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "query": "Stockholm, Sweden",
+    "lat": 59.3251172,
+    "lon": 18.0710935,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:10.010Z",
+    "raw": {
+      "lon": 18.0710935,
+      "lat": 59.3251172,
+      "display_name": "Stockholm",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 25929985,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "postcode": "111 29",
+        "countrycode": "SE",
+        "name": "Stockholm",
+        "country": "Sweden",
+        "county": "Stockholm County"
+      }
+    }
+  },
+  "1916|Berlin|Germany": {
+    "key": "1916|Berlin|Germany",
+    "year": "1916",
+    "city": "Berlin",
+    "country": "Germany",
+    "query": "Berlin, Germany",
+    "lat": 52.5173885,
+    "lon": 13.3951309,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:11.125Z",
+    "raw": {
+      "lon": 13.3951309,
+      "lat": 52.5173885,
+      "display_name": "Berlin",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 62422,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "DE",
+        "name": "Berlin",
+        "country": "Germany",
+        "extent": [
+          13.088345,
+          52.6755087,
+          13.7611609,
+          52.3382448
+        ]
+      }
+    }
+  },
+  "1920|Antwerp|Belgium": {
+    "key": "1920|Antwerp|Belgium",
+    "year": "1920",
+    "city": "Antwerp",
+    "country": "Belgium",
+    "query": "Antwerp, Belgium",
+    "lat": 51.2211097,
+    "lon": 4.3997081,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:12.240Z",
+    "raw": {
+      "lon": 4.3997081,
+      "lat": 51.2211097,
+      "display_name": "Antwerp",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 59518,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "BE",
+        "name": "Antwerp",
+        "country": "Belgium",
+        "state": "Antwerp",
+        "county": "Antwerp",
+        "extent": [
+          4.2175769,
+          51.3776356,
+          4.5090543,
+          51.1432868
+        ]
+      }
+    }
+  },
+  "1924|Chamonix|France": {
+    "key": "1924|Chamonix|France",
+    "year": "1924",
+    "city": "Chamonix",
+    "country": "France",
+    "query": "Chamonix, France",
+    "lat": 45.9246705,
+    "lon": 6.8727506,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:13.345Z",
+    "raw": {
+      "lon": 6.8727506,
+      "lat": 45.9246705,
+      "display_name": "Chamonix-Mont-Blanc",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 104836,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "postcode": "74400",
+        "countrycode": "FR",
+        "name": "Chamonix-Mont-Blanc",
+        "country": "France",
+        "state": "Auvergne-Rhône-Alpes",
+        "county": "Upper Savoy",
+        "extent": [
+          6.8137453,
+          46.0311467,
+          7.0452884,
+          45.8284379
+        ]
+      }
+    }
+  },
+  "1924|Paris|S008 VIII": {
+    "key": "1924|Paris|S008 VIII",
+    "year": "1924",
+    "city": "Paris",
+    "country": "S008 VIII",
+    "query": "Paris, France",
+    "lat": 48.8534951,
+    "lon": 2.3483915,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:14.475Z",
+    "raw": {
+      "lon": 2.3483915,
+      "lat": 48.8534951,
+      "display_name": "Paris",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 71525,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "FR",
+        "name": "Paris",
+        "country": "France",
+        "state": "Ile-de-France",
+        "extent": [
+          2.224122,
+          48.902156,
+          2.4697602,
+          48.8155755
+        ]
+      }
+    }
+  },
+  "1928|St. Moritz|Switzerland": {
+    "key": "1928|St. Moritz|Switzerland",
+    "year": "1928",
+    "city": "St. Moritz",
+    "country": "Switzerland",
+    "query": "Saint Moritz, Switzerland",
+    "lat": 46.4978958,
+    "lon": 9.8392428,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:15.625Z",
+    "raw": {
+      "lon": 9.8392428,
+      "lat": 46.4978958,
+      "display_name": "Sankt Moritz",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1684175,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "postcode": "7500",
+        "countrycode": "CH",
+        "name": "Sankt Moritz",
+        "country": "Switzerland",
+        "state": "Grisons",
+        "county": "Maloja",
+        "extent": [
+          9.7493572,
+          46.5146048,
+          9.8645418,
+          46.4577166
+        ]
+      }
+    }
+  },
+  "1928|Amsterdam|Netherlands": {
+    "key": "1928|Amsterdam|Netherlands",
+    "year": "1928",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "query": "Amsterdam, Netherlands",
+    "lat": 52.3730796,
+    "lon": 4.8924534,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:16.732Z",
+    "raw": {
+      "lon": 4.8924534,
+      "lat": 52.3730796,
+      "display_name": "Amsterdam",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 271110,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "NL",
+        "name": "Amsterdam",
+        "country": "Netherlands",
+        "state": "North Holland",
+        "extent": [
+          4.7287776,
+          52.4310638,
+          5.0791622,
+          52.2781742
+        ]
+      }
+    }
+  },
+  "1932|Lake Placid|United States": {
+    "key": "1932|Lake Placid|United States",
+    "year": "1932",
+    "city": "Lake Placid",
+    "country": "United States",
+    "query": "Lake Placid, New York, United States",
+    "lat": 44.2831194,
+    "lon": -73.9828318,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:17.849Z",
+    "raw": {
+      "lon": -73.9828318,
+      "lat": 44.2831194,
+      "display_name": "Village of Lake Placid",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 175841,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "postcode": "12946",
+        "countrycode": "US",
+        "name": "Village of Lake Placid",
+        "country": "United States",
+        "state": "New York",
+        "county": "Essex County",
+        "extent": [
+          -74.000083,
+          44.298809,
+          -73.971524,
+          44.27014
+        ]
+      }
+    }
+  },
+  "1932|Los Angeles|S010 X": {
+    "key": "1932|Los Angeles|S010 X",
+    "year": "1932",
+    "city": "Los Angeles",
+    "country": "S010 X",
+    "query": "Los Angeles, United States",
+    "lat": 34.0536909,
+    "lon": -118.242766,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:18.972Z",
+    "raw": {
+      "lon": -118.242766,
+      "lat": 34.0536909,
+      "display_name": "Los Angeles",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 207359,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "US",
+        "name": "Los Angeles",
+        "country": "United States",
+        "state": "California",
+        "county": "Los Angeles County",
+        "extent": [
+          -118.6681798,
+          34.337306,
+          -118.1552983,
+          33.659541
+        ]
+      }
+    }
+  },
+  "1936|Garmisch-Partenkirchen|Germany": {
+    "key": "1936|Garmisch-Partenkirchen|Germany",
+    "year": "1936",
+    "city": "Garmisch-Partenkirchen",
+    "country": "Germany",
+    "query": "Garmisch-Partenkirchen, Germany",
+    "lat": 47.4923741,
+    "lon": 11.0962815,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:20.172Z",
+    "raw": {
+      "lon": 11.0962815,
+      "lat": 47.4923741,
+      "display_name": "Garmisch-Partenkirchen",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 939334,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "countrycode": "DE",
+        "name": "Garmisch-Partenkirchen",
+        "country": "Germany",
+        "state": "Bavaria",
+        "county": "Landkreis Garmisch-Partenkirchen",
+        "extent": [
+          10.8693855,
+          47.5489456,
+          11.2230507,
+          47.3933482
+        ]
+      }
+    }
+  },
+  "1936|Berlin|S011 XI": {
+    "key": "1936|Berlin|S011 XI",
+    "year": "1936",
+    "city": "Berlin",
+    "country": "S011 XI",
+    "query": "Berlin, Germany",
+    "lat": 52.5173885,
+    "lon": 13.3951309,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:21.302Z",
+    "raw": {
+      "lon": 13.3951309,
+      "lat": 52.5173885,
+      "display_name": "Berlin",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 62422,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "DE",
+        "name": "Berlin",
+        "country": "Germany",
+        "extent": [
+          13.088345,
+          52.6755087,
+          13.7611609,
+          52.3382448
+        ]
+      }
+    }
+  },
+  "1940|Sapporo Garmisch-Partenkirchen|Japan Germany": {
+    "key": "1940|Sapporo Garmisch-Partenkirchen|Japan Germany",
+    "year": "1940",
+    "city": "Sapporo Garmisch-Partenkirchen",
+    "country": "Japan Germany",
+    "query": "Sapporo, Japan",
+    "lat": 43.061936,
+    "lon": 141.3542924,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:22.496Z",
+    "raw": {
+      "lon": 141.3542924,
+      "lat": 43.061936,
+      "display_name": "Sapporo",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 4085749,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "JP",
+        "name": "Sapporo",
+        "country": "Japan",
+        "state": "Hokkaido",
+        "county": "Ishikari Subprefecture",
+        "extent": [
+          140.990503,
+          43.189994,
+          141.505422,
+          42.780706
+        ]
+      }
+    }
+  },
+  "1944|Cortina d'Ampezzo|Italy": {
+    "key": "1944|Cortina d'Ampezzo|Italy",
+    "year": "1944",
+    "city": "Cortina d'Ampezzo",
+    "country": "Italy",
+    "query": "Cortina d'Ampezzo, Italy",
+    "lat": 46.5383332,
+    "lon": 12.1373506,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:23.666Z",
+    "raw": {
+      "lon": 12.1373506,
+      "lat": 46.5383332,
+      "display_name": "Cortina d'Ampezzo",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 47235,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "postcode": "32043",
+        "countrycode": "IT",
+        "name": "Cortina d'Ampezzo",
+        "country": "Italy",
+        "state": "Veneto",
+        "county": "Belluno",
+        "extent": [
+          11.9885395,
+          46.6750022,
+          12.257589,
+          46.4617711
+        ]
+      }
+    }
+  },
+  "1948|St. Moritz|Switzerland": {
+    "key": "1948|St. Moritz|Switzerland",
+    "year": "1948",
+    "city": "St. Moritz",
+    "country": "Switzerland",
+    "query": "Saint Moritz, Switzerland",
+    "lat": 46.4978958,
+    "lon": 9.8392428,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:24.780Z",
+    "raw": {
+      "lon": 9.8392428,
+      "lat": 46.4978958,
+      "display_name": "Sankt Moritz",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1684175,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "postcode": "7500",
+        "countrycode": "CH",
+        "name": "Sankt Moritz",
+        "country": "Switzerland",
+        "state": "Grisons",
+        "county": "Maloja",
+        "extent": [
+          9.7493572,
+          46.5146048,
+          9.8645418,
+          46.4577166
+        ]
+      }
+    }
+  },
+  "1948|London|United Kingdom": {
+    "key": "1948|London|United Kingdom",
+    "year": "1948",
+    "city": "London",
+    "country": "United Kingdom",
+    "query": "London, United Kingdom",
+    "lat": 51.5074456,
+    "lon": -0.1277653,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:25.900Z",
+    "raw": {
+      "lon": -0.1277653,
+      "lat": 51.5074456,
+      "display_name": "London",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 107775,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "district",
+        "postcode": "WC2N 5DX",
+        "countrycode": "GB",
+        "name": "London",
+        "country": "United Kingdom",
+        "city": "Westminster",
+        "state": "England",
+        "county": "Greater London"
+      }
+    }
+  },
+  "1952|Oslo|Norway": {
+    "key": "1952|Oslo|Norway",
+    "year": "1952",
+    "city": "Oslo",
+    "country": "Norway",
+    "query": "Oslo, Norway",
+    "lat": 59.9133301,
+    "lon": 10.7389701,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:27.420Z",
+    "raw": {
+      "lon": 10.7389701,
+      "lat": 59.9133301,
+      "display_name": "Oslo",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 406091,
+        "osm_key": "place",
+        "osm_value": "county",
+        "type": "city",
+        "countrycode": "NO",
+        "name": "Oslo",
+        "country": "Norway",
+        "extent": [
+          10.4891652,
+          60.1351064,
+          10.9513894,
+          59.8093113
+        ]
+      }
+    }
+  },
+  "1952|Helsinki|Finland": {
+    "key": "1952|Helsinki|Finland",
+    "year": "1952",
+    "city": "Helsinki",
+    "country": "Finland",
+    "query": "Helsinki, Finland",
+    "lat": 60.1698897,
+    "lon": 24.9384719,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:28.675Z",
+    "raw": {
+      "lon": 24.9384719,
+      "lat": 60.1698897,
+      "display_name": "Helsinki",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 34914,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "FI",
+        "name": "Helsinki",
+        "country": "Finland",
+        "state": "Uusimaa",
+        "extent": [
+          24.7828026,
+          60.2978497,
+          25.2545116,
+          59.922486
+        ]
+      }
+    }
+  },
+  "1956|Cortina d'Ampezzo|Italy": {
+    "key": "1956|Cortina d'Ampezzo|Italy",
+    "year": "1956",
+    "city": "Cortina d'Ampezzo",
+    "country": "Italy",
+    "query": "Cortina d'Ampezzo, Italy",
+    "lat": 46.5383332,
+    "lon": 12.1373506,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:29.809Z",
+    "raw": {
+      "lon": 12.1373506,
+      "lat": 46.5383332,
+      "display_name": "Cortina d'Ampezzo",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 47235,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "postcode": "32043",
+        "countrycode": "IT",
+        "name": "Cortina d'Ampezzo",
+        "country": "Italy",
+        "state": "Veneto",
+        "county": "Belluno",
+        "extent": [
+          11.9885395,
+          46.6750022,
+          12.257589,
+          46.4617711
+        ]
+      }
+    }
+  },
+  "1956|Melbourne Stockholm|Australia Sweden": {
+    "key": "1956|Melbourne Stockholm|Australia Sweden",
+    "year": "1956",
+    "city": "Melbourne Stockholm",
+    "country": "Australia Sweden",
+    "query": "Melbourne, Australia",
+    "lat": -37.8142454,
+    "lon": 144.9631732,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:30.916Z",
+    "raw": {
+      "lon": 144.9631732,
+      "lat": -37.8142454,
+      "display_name": "Melbourne",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 4246124,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "AU",
+        "name": "Melbourne",
+        "country": "Australia",
+        "state": "Victoria",
+        "extent": [
+          144.44405,
+          -37.40175,
+          146.1925,
+          -38.49937
+        ]
+      }
+    }
+  },
+  "1960|Squaw Valley|United States": {
+    "key": "1960|Squaw Valley|United States",
+    "year": "1960",
+    "city": "Squaw Valley",
+    "country": "United States",
+    "query": "Payette, Idaho, United States",
+    "lat": 44.0374651,
+    "lon": -116.7651123,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:32.030Z",
+    "raw": {
+      "lon": -116.7651123,
+      "lat": 44.0374651,
+      "display_name": "Payette County",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1742104,
+        "osm_key": "place",
+        "osm_value": "county",
+        "type": "county",
+        "countrycode": "US",
+        "name": "Payette County",
+        "country": "United States",
+        "state": "Idaho",
+        "extent": [
+          -116.9826555,
+          44.1551786,
+          -116.452068,
+          43.792583
+        ]
+      }
+    }
+  },
+  "1960|Rome|Italy": {
+    "key": "1960|Rome|Italy",
+    "year": "1960",
+    "city": "Rome",
+    "country": "Italy",
+    "query": "Rome, Italy",
+    "lat": 41.8933203,
+    "lon": 12.4829321,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:33.200Z",
+    "raw": {
+      "lon": 12.4829321,
+      "lat": 41.8933203,
+      "display_name": "Rome",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 41485,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "IT",
+        "name": "Rome",
+        "country": "Italy",
+        "state": "Lazio",
+        "county": "Roma Capitale",
+        "extent": [
+          12.2344669,
+          42.1410285,
+          12.8557603,
+          41.6556417
+        ]
+      }
+    }
+  },
+  "1964|Innsbruck|Austria": {
+    "key": "1964|Innsbruck|Austria",
+    "year": "1964",
+    "city": "Innsbruck",
+    "country": "Austria",
+    "query": "Innsbruck, Austria",
+    "lat": 47.2654296,
+    "lon": 11.3927685,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:34.340Z",
+    "raw": {
+      "lon": 11.3927685,
+      "lat": 47.2654296,
+      "display_name": "Innsbruck",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 4835169,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "AT",
+        "name": "Innsbruck",
+        "country": "Austria",
+        "state": "Tyrol",
+        "extent": [
+          11.3016374,
+          47.3601261,
+          11.4559615,
+          47.2107727
+        ]
+      }
+    }
+  },
+  "1964|Tokyo|Japan": {
+    "key": "1964|Tokyo|Japan",
+    "year": "1964",
+    "city": "Tokyo",
+    "country": "Japan",
+    "query": "Tokyo, Japan",
+    "lat": 35.6768601,
+    "lon": 139.7638947,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:35.443Z",
+    "raw": {
+      "lon": 139.7638947,
+      "lat": 35.6768601,
+      "display_name": "Tokyo",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1543125,
+        "osm_key": "place",
+        "osm_value": "province",
+        "type": "city",
+        "countrycode": "JP",
+        "name": "Tokyo",
+        "country": "Japan",
+        "extent": [
+          135.8536855,
+          35.8984245,
+          154.205541,
+          20.2145811
+        ]
+      }
+    }
+  },
+  "1968|Grenoble|France": {
+    "key": "1968|Grenoble|France",
+    "year": "1968",
+    "city": "Grenoble",
+    "country": "France",
+    "query": "Grenoble, France",
+    "lat": 45.1875602,
+    "lon": 5.7357819,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:36.550Z",
+    "raw": {
+      "lon": 5.7357819,
+      "lat": 45.1875602,
+      "display_name": "Grenoble",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 80348,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "postcode": "38000;38100",
+        "countrycode": "FR",
+        "name": "Grenoble",
+        "country": "France",
+        "state": "Auvergne-Rhône-Alpes",
+        "county": "Isère",
+        "extent": [
+          5.6776059,
+          45.2140762,
+          5.7531315,
+          45.1541442
+        ]
+      }
+    }
+  },
+  "1968|Mexico City|Mexico": {
+    "key": "1968|Mexico City|Mexico",
+    "year": "1968",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "query": "Mexico City, Mexico",
+    "lat": 19.4326296,
+    "lon": -99.1331785,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:37.653Z",
+    "raw": {
+      "lon": -99.1331785,
+      "lat": 19.4326296,
+      "display_name": "Mexico City",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 17483459,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "district",
+        "countrycode": "MX",
+        "name": "Mexico City",
+        "country": "Mexico",
+        "state": "Mexico City",
+        "extent": [
+          -99.3150003,
+          19.5796926,
+          -98.9750504,
+          19.2419543
+        ]
+      }
+    }
+  },
+  "1972|Sapporo|Japan": {
+    "key": "1972|Sapporo|Japan",
+    "year": "1972",
+    "city": "Sapporo",
+    "country": "Japan",
+    "query": "Sapporo, Japan",
+    "lat": 43.061936,
+    "lon": 141.3542924,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:38.770Z",
+    "raw": {
+      "lon": 141.3542924,
+      "lat": 43.061936,
+      "display_name": "Sapporo",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 4085749,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "JP",
+        "name": "Sapporo",
+        "country": "Japan",
+        "state": "Hokkaido",
+        "county": "Ishikari Subprefecture",
+        "extent": [
+          140.990503,
+          43.189994,
+          141.505422,
+          42.780706
+        ]
+      }
+    }
+  },
+  "1972|Munich|West Germany": {
+    "key": "1972|Munich|West Germany",
+    "year": "1972",
+    "city": "Munich",
+    "country": "West Germany",
+    "query": "Munich, Germany",
+    "lat": 48.1371079,
+    "lon": 11.5753822,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:40.012Z",
+    "raw": {
+      "lon": 11.5753822,
+      "lat": 48.1371079,
+      "display_name": "Munich",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 62428,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "DE",
+        "name": "Munich",
+        "country": "Germany",
+        "state": "Bavaria",
+        "extent": [
+          11.360777,
+          48.2481162,
+          11.7229099,
+          48.0616244
+        ]
+      }
+    }
+  },
+  "1976|Innsbruck|Austria": {
+    "key": "1976|Innsbruck|Austria",
+    "year": "1976",
+    "city": "Innsbruck",
+    "country": "Austria",
+    "query": "Innsbruck, Austria",
+    "lat": 47.2654296,
+    "lon": 11.3927685,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:41.273Z",
+    "raw": {
+      "lon": 11.3927685,
+      "lat": 47.2654296,
+      "display_name": "Innsbruck",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 4835169,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "AT",
+        "name": "Innsbruck",
+        "country": "Austria",
+        "state": "Tyrol",
+        "extent": [
+          11.3016374,
+          47.3601261,
+          11.4559615,
+          47.2107727
+        ]
+      }
+    }
+  },
+  "1976|Montreal|Canada": {
+    "key": "1976|Montreal|Canada",
+    "year": "1976",
+    "city": "Montreal",
+    "country": "Canada",
+    "query": "Montreal, Canada",
+    "lat": 45.5031824,
+    "lon": -73.5698065,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:42.378Z",
+    "raw": {
+      "lon": -73.5698065,
+      "lat": 45.5031824,
+      "display_name": "Montreal",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1634158,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "CA",
+        "name": "Montreal",
+        "country": "Canada",
+        "state": "Quebec",
+        "county": "Urban agglomeration of Montreal",
+        "extent": [
+          -73.9741567,
+          45.7047897,
+          -73.4742952,
+          45.4100756
+        ]
+      }
+    }
+  },
+  "1980|Lake Placid|United States": {
+    "key": "1980|Lake Placid|United States",
+    "year": "1980",
+    "city": "Lake Placid",
+    "country": "United States",
+    "query": "Lake Placid, New York, United States",
+    "lat": 44.2831194,
+    "lon": -73.9828318,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:43.487Z",
+    "raw": {
+      "lon": -73.9828318,
+      "lat": 44.2831194,
+      "display_name": "Village of Lake Placid",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 175841,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "postcode": "12946",
+        "countrycode": "US",
+        "name": "Village of Lake Placid",
+        "country": "United States",
+        "state": "New York",
+        "county": "Essex County",
+        "extent": [
+          -74.000083,
+          44.298809,
+          -73.971524,
+          44.27014
+        ]
+      }
+    }
+  },
+  "1980|Moscow|Soviet Union": {
+    "key": "1980|Moscow|Soviet Union",
+    "year": "1980",
+    "city": "Moscow",
+    "country": "Soviet Union",
+    "query": "Moscow, Russia",
+    "lat": 55.7505412,
+    "lon": 37.6174782,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:44.648Z",
+    "raw": {
+      "lon": 37.6174782,
+      "lat": 55.7505412,
+      "display_name": "Moscow",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 2555133,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "RU",
+        "name": "Moscow",
+        "country": "Russia",
+        "state": "Moscow",
+        "extent": [
+          37.290502,
+          55.9577717,
+          37.9674277,
+          55.516684
+        ]
+      }
+    }
+  },
+  "1984|Sarajevo|Yugoslavia": {
+    "key": "1984|Sarajevo|Yugoslavia",
+    "year": "1984",
+    "city": "Sarajevo",
+    "country": "Yugoslavia",
+    "query": "Sarajevo, Bosnia, Serbia",
+    "lat": 43.8602356,
+    "lon": 18.4302782,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:45.799Z",
+    "raw": {
+      "lon": 18.4302782,
+      "lat": 43.8602356,
+      "display_name": "Museum of the Old Serbian Orthodox Church Sarajevo",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 5303040488,
+        "osm_key": "tourism",
+        "osm_value": "museum",
+        "type": "house",
+        "postcode": "71200",
+        "countrycode": "BA",
+        "name": "Museum of the Old Serbian Orthodox Church Sarajevo",
+        "country": "Bosnia and Herzegovina",
+        "city": "MZ \"Baščaršija\"",
+        "street": "Ekmića čikma",
+        "state": "Federation of Bosnia and Herzegovina",
+        "county": "City of Sarajevo"
+      }
+    }
+  },
+  "1984|Los Angeles|United States": {
+    "key": "1984|Los Angeles|United States",
+    "year": "1984",
+    "city": "Los Angeles",
+    "country": "United States",
+    "query": "Los Angeles, United States",
+    "lat": 34.0536909,
+    "lon": -118.242766,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:47.113Z",
+    "raw": {
+      "lon": -118.242766,
+      "lat": 34.0536909,
+      "display_name": "Los Angeles",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 207359,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "US",
+        "name": "Los Angeles",
+        "country": "United States",
+        "state": "California",
+        "county": "Los Angeles County",
+        "extent": [
+          -118.6681798,
+          34.337306,
+          -118.1552983,
+          33.659541
+        ]
+      }
+    }
+  },
+  "1988|Calgary|Canada": {
+    "key": "1988|Calgary|Canada",
+    "year": "1988",
+    "city": "Calgary",
+    "country": "Canada",
+    "query": "Calgary, Canada",
+    "lat": 51.0456064,
+    "lon": -114.057541,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:48.226Z",
+    "raw": {
+      "lon": -114.057541,
+      "lat": 51.0456064,
+      "display_name": "Calgary",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 3227127,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "CA",
+        "name": "Calgary",
+        "country": "Canada",
+        "state": "Alberta",
+        "extent": [
+          -114.3157587,
+          51.2125013,
+          -113.8600018,
+          50.842526
+        ]
+      }
+    }
+  },
+  "1988|Seoul|South Korea": {
+    "key": "1988|Seoul|South Korea",
+    "year": "1988",
+    "city": "Seoul",
+    "country": "South Korea",
+    "query": "Seoul, South Korea",
+    "lat": 37.5666791,
+    "lon": 126.9782914,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:49.440Z",
+    "raw": {
+      "lon": 126.9782914,
+      "lat": 37.5666791,
+      "display_name": "Seoul",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 2297418,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "KR",
+        "name": "Seoul",
+        "country": "South Korea",
+        "extent": [
+          126.7644328,
+          37.7014794,
+          127.1837702,
+          37.4285424
+        ]
+      }
+    }
+  },
+  "1992|Albertville|France": {
+    "key": "1992|Albertville|France",
+    "year": "1992",
+    "city": "Albertville",
+    "country": "France",
+    "query": "Albertville, France",
+    "lat": 45.6754622,
+    "lon": 6.3925417,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:50.603Z",
+    "raw": {
+      "lon": 6.3925417,
+      "lat": 45.6754622,
+      "display_name": "Albertville",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 111528,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "postcode": "73200",
+        "countrycode": "FR",
+        "name": "Albertville",
+        "country": "France",
+        "state": "Auvergne-Rhône-Alpes",
+        "county": "Savoy",
+        "extent": [
+          6.3595871,
+          45.6882226,
+          6.4604269,
+          45.6411143
+        ]
+      }
+    }
+  },
+  "1992|Barcelona|Spain": {
+    "key": "1992|Barcelona|Spain",
+    "year": "1992",
+    "city": "Barcelona",
+    "country": "Spain",
+    "query": "Barcelona, Spain",
+    "lat": 41.3825802,
+    "lon": 2.177073,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:51.708Z",
+    "raw": {
+      "lon": 2.177073,
+      "lat": 41.3825802,
+      "display_name": "Barcelona",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 347950,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "ES",
+        "name": "Barcelona",
+        "country": "Spain",
+        "state": "Catalonia",
+        "county": "Barcelonès",
+        "extent": [
+          2.0524977,
+          41.4679135,
+          2.2283555,
+          41.3170353
+        ]
+      }
+    }
+  },
+  "1994|Lillehammer|Norway": {
+    "key": "1994|Lillehammer|Norway",
+    "year": "1994",
+    "city": "Lillehammer",
+    "country": "Norway",
+    "query": "Lillehammer, Norway, Norway",
+    "lat": 61.1333408,
+    "lon": 10.426585544131413,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:52.853Z",
+    "raw": {
+      "lon": 10.426585544131413,
+      "lat": 61.1333408,
+      "display_name": "Lillehammer",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 412416,
+        "osm_key": "place",
+        "osm_value": "municipality",
+        "type": "city",
+        "countrycode": "NO",
+        "name": "Lillehammer",
+        "country": "Norway",
+        "county": "Innlandet",
+        "extent": [
+          10.0377333,
+          61.2480272,
+          10.7436698,
+          61.0185515
+        ]
+      }
+    }
+  },
+  "1996|Atlanta|United States": {
+    "key": "1996|Atlanta|United States",
+    "year": "1996",
+    "city": "Atlanta",
+    "country": "United States",
+    "query": "Atlanta, United States",
+    "lat": 33.7544657,
+    "lon": -84.3898151,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:53.995Z",
+    "raw": {
+      "lon": -84.3898151,
+      "lat": 33.7544657,
+      "display_name": "Atlanta",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 119557,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "US",
+        "name": "Atlanta",
+        "country": "United States",
+        "state": "Georgia",
+        "county": "Fulton County",
+        "extent": [
+          -84.550854,
+          33.886823,
+          -84.28956,
+          33.6479187
+        ]
+      }
+    }
+  },
+  "1998|Nagano|Japan": {
+    "key": "1998|Nagano|Japan",
+    "year": "1998",
+    "city": "Nagano",
+    "country": "Japan",
+    "query": "Nagano, Japan",
+    "lat": 36.6485851,
+    "lon": 138.1947664,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:55.130Z",
+    "raw": {
+      "lon": 138.1947664,
+      "lat": 36.6485851,
+      "display_name": "Nagano",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 3648962,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "JP",
+        "name": "Nagano",
+        "country": "Japan",
+        "state": "Nagano Prefecture",
+        "extent": [
+          137.910101,
+          36.8357344,
+          138.318899,
+          36.460702
+        ]
+      }
+    }
+  },
+  "2000|Sydney|Australia": {
+    "key": "2000|Sydney|Australia",
+    "year": "2000",
+    "city": "Sydney",
+    "country": "Australia",
+    "query": "Sydney, Australia",
+    "lat": -33.8698439,
+    "lon": 151.2082848,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:56.354Z",
+    "raw": {
+      "lon": 151.2082848,
+      "lat": -33.8698439,
+      "display_name": "Sydney",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 5750005,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "AU",
+        "name": "Sydney",
+        "country": "Australia",
+        "state": "New South Wales",
+        "extent": [
+          150.260825,
+          -33.3641864,
+          151.343898,
+          -34.1732416
+        ]
+      }
+    }
+  },
+  "2002|Salt Lake City|United States": {
+    "key": "2002|Salt Lake City|United States",
+    "year": "2002",
+    "city": "Salt Lake City",
+    "country": "United States",
+    "query": "Salt Lake City, Utah, United States",
+    "lat": 40.7596198,
+    "lon": -111.886797,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:57.464Z",
+    "raw": {
+      "lon": -111.886797,
+      "lat": 40.7596198,
+      "display_name": "Salt Lake City",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 198770,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "US",
+        "name": "Salt Lake City",
+        "country": "United States",
+        "state": "Utah",
+        "county": "Salt Lake County",
+        "extent": [
+          -112.1013916,
+          40.8533905,
+          -111.7404843,
+          40.6999263
+        ]
+      }
+    }
+  },
+  "2004|Athens|Greece": {
+    "key": "2004|Athens|Greece",
+    "year": "2004",
+    "city": "Athens",
+    "country": "Greece",
+    "query": "Athens, Greece",
+    "lat": 37.9755648,
+    "lon": 23.7348324,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:58.595Z",
+    "raw": {
+      "lon": 23.7348324,
+      "lat": 37.9755648,
+      "display_name": "Athens",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 441183,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "postcode": "105 57",
+        "countrycode": "GR",
+        "name": "Athens",
+        "country": "Greece",
+        "state": "Attica",
+        "county": "Regional Unit of Central Athens"
+      }
+    }
+  },
+  "2006|Turin|Italy": {
+    "key": "2006|Turin|Italy",
+    "year": "2006",
+    "city": "Turin",
+    "country": "Italy",
+    "query": "Turin, Italy",
+    "lat": 45.0677551,
+    "lon": 7.6824892,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:55:59.696Z",
+    "raw": {
+      "lon": 7.6824892,
+      "lat": 45.0677551,
+      "display_name": "Turin",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 43992,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "IT",
+        "name": "Turin",
+        "country": "Italy",
+        "state": "Piedmont",
+        "county": "Turin",
+        "extent": [
+          7.5778348,
+          45.1402175,
+          7.7733388,
+          45.0067924
+        ]
+      }
+    }
+  },
+  "2008|Beijing|China": {
+    "key": "2008|Beijing|China",
+    "year": "2008",
+    "city": "Beijing",
+    "country": "China",
+    "query": "Beijing, China",
+    "lat": 39.9057136,
+    "lon": 116.3912972,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:00.799Z",
+    "raw": {
+      "lon": 116.3912972,
+      "lat": 39.9057136,
+      "display_name": "Beijing",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 25248662,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "district",
+        "postcode": "100010",
+        "countrycode": "CN",
+        "name": "Beijing",
+        "country": "China",
+        "city": "Dongcheng",
+        "state": "Beijing"
+      }
+    }
+  },
+  "2010|Vancouver|Canada": {
+    "key": "2010|Vancouver|Canada",
+    "year": "2010",
+    "city": "Vancouver",
+    "country": "Canada",
+    "query": "Vancouver, Canada",
+    "lat": 49.2608724,
+    "lon": -123.113952,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:01.989Z",
+    "raw": {
+      "lon": -123.113952,
+      "lat": 49.2608724,
+      "display_name": "Vancouver",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1852574,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "CA",
+        "name": "Vancouver",
+        "country": "Canada",
+        "state": "British Columbia",
+        "county": "Metro Vancouver Regional District",
+        "extent": [
+          -123.2249611,
+          49.3161714,
+          -123.0232419,
+          49.1989306
+        ]
+      }
+    }
+  },
+  "2012|London|United Kingdom": {
+    "key": "2012|London|United Kingdom",
+    "year": "2012",
+    "city": "London",
+    "country": "United Kingdom",
+    "query": "London, United Kingdom",
+    "lat": 51.5074456,
+    "lon": -0.1277653,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:03.143Z",
+    "raw": {
+      "lon": -0.1277653,
+      "lat": 51.5074456,
+      "display_name": "London",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 107775,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "district",
+        "postcode": "WC2N 5DX",
+        "countrycode": "GB",
+        "name": "London",
+        "country": "United Kingdom",
+        "city": "Westminster",
+        "state": "England",
+        "county": "Greater London"
+      }
+    }
+  },
+  "2014|Sochi|Russia": {
+    "key": "2014|Sochi|Russia",
+    "year": "2014",
+    "city": "Sochi",
+    "country": "Russia",
+    "query": "Sochi, Russia",
+    "lat": 43.5854823,
+    "lon": 39.723109,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:04.510Z",
+    "raw": {
+      "lon": 39.723109,
+      "lat": 43.5854823,
+      "display_name": "Sochi",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1430508,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "RU",
+        "name": "Sochi",
+        "country": "Russia",
+        "state": "Krasnodar Krai",
+        "county": "town district of Sochi",
+        "extent": [
+          39.1493697,
+          44.0309026,
+          40.0105333,
+          43.3949798
+        ]
+      }
+    }
+  },
+  "2016|Rio de Janeiro|Brazil": {
+    "key": "2016|Rio de Janeiro|Brazil",
+    "year": "2016",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "query": "Rio de Janeiro, Brazil",
+    "lat": -22.9110137,
+    "lon": -43.2093727,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:05.801Z",
+    "raw": {
+      "lon": -43.2093727,
+      "lat": -22.9110137,
+      "display_name": "Rio de Janeiro",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 2697338,
+        "osm_key": "place",
+        "osm_value": "municipality",
+        "type": "city",
+        "countrycode": "BR",
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "state": "Rio de Janeiro",
+        "county": "Região Metropolitana do Rio de Janeiro",
+        "extent": [
+          -43.796252,
+          -22.7460878,
+          -43.0990811,
+          -23.0827051
+        ]
+      }
+    }
+  },
+  "2018|Pyeongchang|South Korea": {
+    "key": "2018|Pyeongchang|South Korea",
+    "year": "2018",
+    "city": "Pyeongchang",
+    "country": "South Korea",
+    "query": "Pyeongchang, South Korea, South Korea",
+    "lat": 37.3705,
+    "lon": 128.3903,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:07.386Z",
+    "raw": {
+      "lon": 128.3903,
+      "lat": 37.3705,
+      "display_name": "Pyeongchang",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 2529085,
+        "osm_key": "place",
+        "osm_value": "county",
+        "type": "county",
+        "countrycode": "KR",
+        "name": "Pyeongchang",
+        "country": "South Korea",
+        "state": "Gangwon State",
+        "extent": [
+          128.243529,
+          37.8213851,
+          128.7651105,
+          37.2666346
+        ]
+      }
+    }
+  },
+  "2020|Tokyo|Japan": {
+    "key": "2020|Tokyo|Japan",
+    "year": "2020",
+    "city": "Tokyo",
+    "country": "Japan",
+    "query": "Tokyo, Japan",
+    "lat": 35.6768601,
+    "lon": 139.7638947,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:09.229Z",
+    "raw": {
+      "lon": 139.7638947,
+      "lat": 35.6768601,
+      "display_name": "Tokyo",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1543125,
+        "osm_key": "place",
+        "osm_value": "province",
+        "type": "city",
+        "countrycode": "JP",
+        "name": "Tokyo",
+        "country": "Japan",
+        "extent": [
+          135.8536855,
+          35.8984245,
+          154.205541,
+          20.2145811
+        ]
+      }
+    }
+  },
+  "2022|Beijing|China": {
+    "key": "2022|Beijing|China",
+    "year": "2022",
+    "city": "Beijing",
+    "country": "China",
+    "query": "Beijing, China",
+    "lat": 39.9057136,
+    "lon": 116.3912972,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:11.396Z",
+    "raw": {
+      "lon": 116.3912972,
+      "lat": 39.9057136,
+      "display_name": "Beijing",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 25248662,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "district",
+        "postcode": "100010",
+        "countrycode": "CN",
+        "name": "Beijing",
+        "country": "China",
+        "city": "Dongcheng",
+        "state": "Beijing"
+      }
+    }
+  },
+  "2024|Paris|France": {
+    "key": "2024|Paris|France",
+    "year": "2024",
+    "city": "Paris",
+    "country": "France",
+    "query": "Paris, France",
+    "lat": 48.8534951,
+    "lon": 2.3483915,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:14.391Z",
+    "raw": {
+      "lon": 2.3483915,
+      "lat": 48.8534951,
+      "display_name": "Paris",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 71525,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "FR",
+        "name": "Paris",
+        "country": "France",
+        "state": "Ile-de-France",
+        "extent": [
+          2.224122,
+          48.902156,
+          2.4697602,
+          48.8155755
+        ]
+      }
+    }
+  },
+  "2026|Milan Cortina d'Ampezzo|Italy": {
+    "key": "2026|Milan Cortina d'Ampezzo|Italy",
+    "year": "2026",
+    "city": "Milan Cortina d'Ampezzo",
+    "country": "Italy",
+    "query": "Milan, Italy",
+    "lat": 45.4641943,
+    "lon": 9.1896346,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:16.273Z",
+    "raw": {
+      "lon": 9.1896346,
+      "lat": 45.4641943,
+      "display_name": "Milan",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 44915,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "IT",
+        "name": "Milan",
+        "country": "Italy",
+        "state": "Lombardy",
+        "county": "Milan",
+        "extent": [
+          9.0408867,
+          45.5358482,
+          9.2781103,
+          45.3867381
+        ]
+      }
+    }
+  },
+  "2028|Los Angeles|United States": {
+    "key": "2028|Los Angeles|United States",
+    "year": "2028",
+    "city": "Los Angeles",
+    "country": "United States",
+    "query": "Los Angeles, United States",
+    "lat": 34.0536909,
+    "lon": -118.242766,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:18.611Z",
+    "raw": {
+      "lon": -118.242766,
+      "lat": 34.0536909,
+      "display_name": "Los Angeles",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 207359,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "US",
+        "name": "Los Angeles",
+        "country": "United States",
+        "state": "California",
+        "county": "Los Angeles County",
+        "extent": [
+          -118.6681798,
+          34.337306,
+          -118.1552983,
+          33.659541
+        ]
+      }
+    }
+  },
+  "2030|French Alps|France": {
+    "key": "2030|French Alps|France",
+    "year": "2030",
+    "city": "French Alps",
+    "country": "France",
+    "query": "French Alps, France",
+    "lat": 43.9525507,
+    "lon": 7.479428251496097,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:21.096Z",
+    "raw": {
+      "lon": 7.479428251496097,
+      "lat": 43.9525507,
+      "display_name": "French Riviera",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 2128669,
+        "osm_key": "boundary",
+        "osm_value": "local_authority",
+        "type": "other",
+        "countrycode": "FR",
+        "name": "French Riviera",
+        "country": "France",
+        "state": "Provence-Alpes-Côte d'Azur",
+        "county": "Maritime Alps",
+        "extent": [
+          7.3682502,
+          44.1785768,
+          7.7189825,
+          43.7263896
+        ]
+      }
+    }
+  },
+  "2032|Brisbane|Australia": {
+    "key": "2032|Brisbane|Australia",
+    "year": "2032",
+    "city": "Brisbane",
+    "country": "Australia",
+    "query": "Brisbane, Australia",
+    "lat": -27.4689623,
+    "lon": 153.0235009,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:22.849Z",
+    "raw": {
+      "lon": 153.0235009,
+      "lat": -27.4689623,
+      "display_name": "Brisbane",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 11677792,
+        "osm_key": "place",
+        "osm_value": "municipality",
+        "type": "city",
+        "countrycode": "AU",
+        "name": "Brisbane",
+        "country": "Australia",
+        "state": "Queensland",
+        "extent": [
+          152.679693,
+          -27.0215438,
+          153.4682348,
+          -27.660219
+        ]
+      }
+    }
+  },
+  "2034|Salt Lake City|United States": {
+    "key": "2034|Salt Lake City|United States",
+    "year": "2034",
+    "city": "Salt Lake City",
+    "country": "United States",
+    "query": "Salt Lake City, Utah, United States",
+    "lat": 40.7596198,
+    "lon": -111.886797,
+    "provider": "nominatim",
+    "status": "ok",
+    "timestamp": "2025-11-25T17:56:24.209Z",
+    "raw": {
+      "lon": -111.886797,
+      "lat": 40.7596198,
+      "display_name": "Salt Lake City",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 198770,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "countrycode": "US",
+        "name": "Salt Lake City",
+        "country": "United States",
+        "state": "Utah",
+        "county": "Salt Lake County",
+        "extent": [
+          -112.1013916,
+          40.8533905,
+          -111.7404843,
+          40.6999263
+        ]
+      }
+    }
+  }
+}
