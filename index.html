@@ -8,8 +8,36 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
   <style>
-    html,body,#map { height: 100%; margin: 0; }
+    html,body { height: 100%; margin: 0; }
     body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    /* Layout for landing + map */
+    header { position: sticky; top:0; z-index:1100; backdrop-filter: blur(8px); background: rgba(255,255,255,0.8); border-bottom: 1px solid rgba(0,0,0,0.06) }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 12px 16px; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:12px }
+    .nav a { text-decoration: none; margin: 0 8px; color: inherit; opacity: .9 }
+    .nav a:hover { opacity: 1 }
+    .hero { padding: 28px 16px 12px; display:flex; flex-direction:column; justify-content:flex-start; }
+    .hero h1 { margin: 0 0 8px }
+    .muted { color:#445; opacity:.9 }
+    .overview-grid { display:grid; gap:16px; margin-top:12px; }
+    @media(min-width:900px){ .overview-grid { grid-template-columns: repeat(3,1fr); } .overview-grid .span-2 { grid-column: span 2; } }
+    .overview-box { background: rgba(0,0,0,0.04); border:1px solid rgba(0,0,0,0.07); border-radius:10px; padding:12px 14px; }
+    body.dark .overview-box { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.12); }
+    .kpis { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; padding: 12px 16px }
+    @media(min-width: 720px) { .kpis { grid-template-columns: repeat(4, minmax(0,1fr)) } }
+    .kpi { background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.06); border-radius: 10px; padding: 12px }
+    .kpi .label { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color:#556 }
+    .kpi .value { font-size: 22px; font-weight: 600; margin-top: 6px }
+    /* Map container takes viewport height */
+    /* Full page sections */
+    .fullpage { min-height:100vh; position:relative; }
+    #mapPage { min-height:100vh; position:relative; overflow:hidden; }
+    #map { height:100%; min-height:100vh; }
+    .scrollCue { margin-top:32px; }
+    .scrollCue button { background:#0077cc; color:#fff; border:none; padding:12px 20px; font-size:16px; border-radius:8px; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,.15); }
+    .scrollCue button:hover { background:#0062a6; }
+    body.dark .scrollCue button { background:#2288ff; }
+    body.dark .scrollCue button:hover { background:#0f6bcf; }
     #controls {
       position: absolute; top: 10px; left: 10px; z-index: 1000;
       background: rgba(255,255,255,0.95); padding: 8px; border-radius: 6px;
@@ -23,28 +51,117 @@
     body.dark #controls button, body.dark #controls input, body.dark #controls select { background: #111417; color: #e6eef6; border-color: rgba(255,255,255,0.06); }
     body.dark #timeline { background: rgba(8,10,12,0.9); }
     body.dark #credits { background: rgba(8,10,12,0.85); color: #cfdff4; }
+    body.dark header { background: rgba(11,15,19,0.7); border-bottom: 1px solid rgba(255,255,255,0.08) }
+    body.dark .kpi { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08) }
+    body.dark .muted { color: #e6eef6 !important; }
+    body.dark #summary h2 { color: #e6eef6; }
+    body.dark .kpi .label { color: #cfdff4; }
+    /* Larger, readable timeline chips */
+    #timeline { font-size: 15px; background: rgba(255,255,255,0.9); }
+    #timeline button { font-size: 15px; padding: 8px 12px; border-radius: 6px; }
+    /* Dark mode timeline */
+    body.dark #timeline { background: rgba(8,10,12,0.9) !important; }
+    body.dark #timeline button { background: #12161b; color: #e6eef6; border-color: rgba(255,255,255,0.12); }
+    body.dark #timeline button[disabled] { opacity: .6; }
   </style>
 </head>
 <body>
+  <!-- Top navigation / landing header -->
+  <header>
+    <div class="wrap nav">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div style="width:10px;height:10px;border-radius:50%;background:#3aa0ff"></div>
+        <strong>Olympic Host Cities</strong>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#mapPage">Map</a>
+        <a href="data/olympics_games_geocoded.csv" download>CSV</a>
+        <a href="data/olympics_games_geocoded.json" download>JSON</a>
+        <a href="https://github.com/BillZohos/Final_Project" target="_blank" rel="noopener">Repo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Compact landing hero with all overview info visible at once -->
+  <section id="home" class="wrap hero">
+    <h1 style="margin-top:0;">Explore Olympic Host Cities</h1>
+    <p class="muted" style="max-width:980px;">The objective of my project was to scrape a wiki page on the locations of every Olympic game and display them on an interactive map.</p>
+    <div class="overview-grid">
+      <div class="overview-box span-2" id="web-scraping">
+        <h2 style="margin:0 0 4px; font-size:18px;">Web Scraping</h2>
+        <p style="margin:0; font-size:14px; line-height:1.4;">When I did my web scraping I got help from the AI assistant and I used prompts such as: <em>"I would like to webscrape a Wikipedia page using Requests and Beautiful Soup. Since this is Wikipedia I will need a user agent to be able to scrape it."</em></p>
+        <p style="margin:6px 0 0; font-size:14px; line-height:1.4;">I used SQL from my Queries page, then asked the AI to use that SQL to create the CSV file I used.</p>
+      </div>
+      <div class="overview-box" id="database">
+        <h2 style="margin:0 0 4px; font-size:18px;">Database</h2>
+        <p style="margin:0; font-size:14px; line-height:1.4;">I made coloumns such as Id, Year, City, Country, Season, Notes etc</p>
+        <p style="margin:6px 0 0; font-size:14px; line-height:1.4;">The csv file I exported was called <code>olympics_games.csv</code></p>
+      </div>
+      <div class="overview-box span-2" id="usage">
+        <h2 style="margin:0 0 4px; font-size:18px;">How To Use This Web App</h2>
+        <p style="margin:0; font-size:14px; line-height:1.4;">The top part of my web page is the landing page which displays some of the information about this project. Below is my Interactive map where you can see the locations of every olympic game from the very first one in Athens, Greece, to the most recent one in Paris, France, you can also filter through summer or winter games aswell as search for indivuidual years or just click through the clustered markers on the map.</p>
+      </div>
+      <div class="overview-box span-2" id="example-sql">
+        <h2 style="margin:0 0 4px; font-size:18px;">Example SQL</h2>
+        <pre style="margin:0; font-size:13px; background:rgba(0,0,0,0.06); padding:10px; border-radius:6px; line-height:1.3; overflow:auto;">SELECT
+    CAST(year AS INTEGER) AS Year,
+    city   AS City,
+    country AS Country,
+    season AS Season,
+    notes  AS Notes
+FROM olympics</pre>
+      </div>
+      <div class="overview-box" id="summary">
+        <h2 style="margin:0 0 6px; font-size:18px;">Summary</h2>
+        <div class="kpis" style="padding:0; grid-template-columns:repeat(2,1fr);">
+          <div class="kpi" style="margin:0;">
+            <div class="label">Total Games</div><div id="kpiTotal" class="value">—</div>
+          </div>
+          <div class="kpi" style="margin:0;">
+            <div class="label">Summer</div><div id="kpiSummer" class="value">—</div>
+          </div>
+          <div class="kpi" style="margin:0;">
+            <div class="label">Winter</div><div id="kpiWinter" class="value">—</div>
+          </div>
+          <div class="kpi" style="margin:0;">
+            <div class="label">Countries</div><div id="kpiCountries" class="value">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:16px;">
+      <button id="scrollToMap" aria-label="Scroll to map" style="background:#0077cc;color:#fff;border:none;padding:10px 16px;font-size:15px;border-radius:8px;cursor:pointer;">Go To Interactive Map ↓</button>
+    </div>
+  </section>
+  <!-- Page 2: Map & Controls -->
+  <section id="mapPage" class="fullpage">
   <div id="controls">
     <label for="yearSelect"><strong>Year:</strong></label>
     <select id="yearSelect"><option value="all">All</option></select>
+    <label for="seasonSelect" style="margin-left:8px;"><strong>Season:</strong></label>
+    <select id="seasonSelect"><option value="all">All</option><option value="Summer">Summer</option><option value="Winter">Winter</option></select>
     <input id="searchBox" placeholder="Search city or country" style="margin-left:8px; padding:4px 6px;" />
     <button id="searchBtn">Search</button>
     <button id="resetBtn">Reset</button>
     <button id="darkToggle" style="margin-left:8px;">Dark Mode</button>
   </div>
-
+  <button id="backToTop" aria-label="Back to landing page" style="position:absolute; top:10px; right:58px; z-index:1001; background:#0077cc; color:#fff; border:none; padding:8px 14px; font-size:13px; border-radius:8px; cursor:pointer; box-shadow:0 3px 8px rgba(0,0,0,0.25); display:none; opacity:0; transition:opacity .3s ease;">Back to Top ↑</button>
   <div id="map"></div>
-  <div id="credits">Map: <a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a> • Data: `data/geocoded_hosts.json`</div>
-  <div id="timeline" style="position: absolute; left: 0; right:0; bottom: 0; z-index:1000; display:flex; gap:6px; padding:8px; overflow:auto; background: rgba(255,255,255,0.9);"></div>
+  <div id="credits">Map: <a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a> • Data: `olympics_geocoded.db` (SQLite via sql.js, fallback JSON)</div>
+  <div id="timeline" style="position: absolute; left: 0; right:0; bottom: 80px; z-index:1000; display:flex; gap:6px; padding:8px; overflow:auto;"></div>
+  </section>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
 
   <script>
     const MAP_DIV_ID = 'map';
-    const DATA_PATH = 'data/geocoded_hosts.json';
+    const DB_PATH = 'olympics_geocoded.db'; // SQLite database file
+    const FALLBACK_JSON = 'data/olympics_games_geocoded.json'; // fallback data source
+    let itemsCache = null;
+    const canceledYears = new Set(['1916', '1940', '1944']);
 
     // guard: ensure Leaflet loaded
     if (typeof L === 'undefined') {
@@ -53,7 +170,9 @@
     }
 
     // init map with light/dark base layers
-    const map = L.map(MAP_DIV_ID).setView([20, 0], 2);
+    // Initialize map without default zoom control; we'll add it top-right
+      const map = L.map(MAP_DIV_ID, { zoomControl: false }).setView([20, 0], 4);
+    L.control.zoom({ position: 'topright' }).addTo(map);
     const lightTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; OpenStreetMap contributors'
@@ -91,7 +210,110 @@
     document.addEventListener('DOMContentLoaded', () => {
       const btn = document.getElementById('darkToggle');
       if (btn) btn.addEventListener('click', () => setDarkMode(!document.body.classList.contains('dark')));
+      const scrollBtn = document.getElementById('scrollToMap');
+      if (scrollBtn) scrollBtn.addEventListener('click', () => {
+        const target = document.getElementById('mapPage');
+        if (target) {
+          const OFFSET = 120; // pixels to keep controls visible
+          const top = target.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+          window.scrollTo({ top, behavior: 'smooth' });
+          // hide the CTA once user navigates to map
+          scrollBtn.style.display = 'none';
+        }
+      });
+      // Make top nav Map link use same offset behavior
+      const navMapLink = document.querySelector('a[href="#mapPage"]');
+      if (navMapLink) navMapLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.getElementById('mapPage');
+        if (target) {
+          const OFFSET = 120;
+          const top = target.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+          window.scrollTo({ top, behavior: 'smooth' });
+          if (scrollBtn) scrollBtn.style.display = 'none';
+        }
+      });
+      const backBtn = document.getElementById('backToTop');
+      if (backBtn) backBtn.addEventListener('click', () => {
+        const home = document.getElementById('home');
+        if (home) {
+          const top = home.getBoundingClientRect().top + window.pageYOffset - 20;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+      // Show/hide back to top on scroll
+      window.addEventListener('scroll', () => {
+        if (!backBtn) return;
+        const threshold = 180; // pixels scrolled before showing
+        if (window.scrollY > threshold) {
+          if (backBtn.style.display === 'none') backBtn.style.display = 'block';
+          backBtn.style.opacity = '1';
+        } else {
+          backBtn.style.opacity = '0';
+          // delay hiding until fade completes
+          setTimeout(() => { if (backBtn.style.opacity === '0') backBtn.style.display = 'none'; }, 320);
+        }
+        // Show scroll-to-map CTA only near top/landing
+        if (scrollBtn) {
+          const showCtaThreshold = 120; // show CTA when near top
+          if (window.scrollY <= showCtaThreshold) {
+            scrollBtn.style.display = 'inline-block';
+          } else {
+            scrollBtn.style.display = 'none';
+          }
+        }
+      });
     });
+
+    async function initData() {
+      if (itemsCache) return itemsCache;
+      // Try SQLite first via sql.js
+      try {
+        if (typeof initSqlJs === 'function') {
+          const SQL = await initSqlJs({ locateFile: f => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/${f}` });
+          const buf = await fetch(DB_PATH).then(r => {
+            if (!r.ok) throw new Error('DB fetch failed');
+            return r.arrayBuffer();
+          });
+            const db = new SQL.Database(new Uint8Array(buf));
+            const res = db.exec("SELECT year, city, country, season, COALESCE(notes,'') AS notes, lat, lon, geocode_provider FROM olympics_geocoded ORDER BY year");
+            if (res.length) {
+              const cols = res[0].columns;
+              itemsCache = res[0].values.map(row => {
+                const o = Object.fromEntries(row.map((v,i)=>[cols[i], v]));
+                o.key = `${o.year}|${o.city}|${o.country}`;
+                return o;
+              });
+              return itemsCache;
+            }
+        }
+      } catch (e) {
+        console.warn('SQLite load failed, falling back to JSON:', e);
+      }
+      // Fallback to JSON
+      try {
+        const data = await fetch(FALLBACK_JSON).then(r => r.json());
+        itemsCache = Object.keys(data).map(k => ({ key: k, ...data[k] }));
+        return itemsCache;
+      } catch (e) {
+        console.error('Fallback JSON load failed:', e);
+        itemsCache = [];
+        return itemsCache;
+      }
+    }
+
+    async function loadStats() {
+      try {
+        const items = await initData();
+        const total = items.length;
+        const summer = items.filter(i => i.season === 'Summer').length;
+        const winter = items.filter(i => i.season === 'Winter').length;
+        const countries = new Set(items.map(i => (i.country||'').trim()).filter(Boolean));
+        const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = String(v); };
+        set('kpiTotal', total); set('kpiSummer', summer); set('kpiWinter', winter); set('kpiCountries', countries.size);
+      } catch (e) { console.error(e); }
+    }
+    loadStats();
 
     // helpers
     function makeMarker(item) {
@@ -103,33 +325,52 @@
       const popup = `<strong>${item.city}, ${item.country}</strong><br/>Year: ${item.year}`;
       marker.bindPopup(popup);
       marker.bindTooltip(title, {direction: 'top', offset: [0, -8]});
-      marker._meta = { year: item.year, city: item.city, country: item.country, key: item.key };
+      marker._meta = { year: item.year, city: item.city, country: item.country, season: item.season, key: item.key };
       return marker;
     }
 
     async function loadAndRender() {
-      const res = await fetch(DATA_PATH);
-      const data = await res.json();
+      const rawItems = await initData();
+      const items = rawItems.filter(it => it && !canceledYears.has(String(it.year)) && Number.isFinite(parseFloat(it.lat)) && Number.isFinite(parseFloat(it.lon)));
 
-        // convert object to array of items
-        // Exclude cancelled Olympic years from the display
-        const canceledYears = new Set(['1916', '1940', '1944']);
-        const items = Object.keys(data).map(k => data[k]).filter(it => it && it.status === 'ok' && !canceledYears.has(String(it.year)));
-
-      // build year index (include cancelled years for bookkeeping)
-      const yearsActive = [...new Set(items.map(i => i.year).filter(Boolean))].map(String);
-      const yearsAllSet = new Set(yearsActive);
-      Array.from(canceledYears).forEach(y => yearsAllSet.add(String(y)));
-      const years = Array.from(yearsAllSet).sort((a,b)=>parseInt(a)-parseInt(b));
+      // helpers to render years based on season filter
       const select = document.getElementById('yearSelect');
-      // show which years are cancelled
       const controls = document.getElementById('controls');
+      const timeline = document.getElementById('timeline');
+      function computeYears(seasonVal) {
+        const filteredItems = seasonVal && seasonVal !== 'all' ? items.filter(i => i.season === seasonVal) : items;
+        const yearsActive = [...new Set(filteredItems.map(i => i.year).filter(Boolean))].map(String);
+        const yearsAllSet = new Set(yearsActive);
+        Array.from(canceledYears).forEach(y => yearsAllSet.add(String(y)));
+        return Array.from(yearsAllSet).sort((a,b)=>parseInt(a)-parseInt(b));
+      }
+      function renderYears(seasonVal) {
+        // dropdown
+        select.innerHTML = '';
+        const optAll = document.createElement('option'); optAll.value = 'all'; optAll.textContent = 'All'; select.appendChild(optAll);
+        const years = computeYears(seasonVal);
+        years.forEach(y => { const opt = document.createElement('option'); opt.value = y; opt.textContent = y; select.appendChild(opt); });
+        // timeline
+        timeline.innerHTML = '';
+        years.forEach(y => {
+          const btn = document.createElement('button');
+          const isCancelled = canceledYears.has(String(y));
+          btn.textContent = isCancelled ? `${y} (Cancelled)` : y;
+          btn.style.border = '1px solid rgba(0,0,0,0.08)';
+          btn.style.background = isCancelled ? '#f3f3f3' : '#fff';
+          btn.style.color = isCancelled ? '#666' : '#000';
+          btn.addEventListener('click', () => { select.value = y; select.dispatchEvent(new Event('change')); });
+          timeline.appendChild(btn);
+        });
+      }
+      // show which years are cancelled (static note)
       const note = document.createElement('div');
       note.id = 'cancelNote';
       note.style.fontSize = '12px'; note.style.marginTop = '6px'; note.style.color = '#444';
       note.textContent = 'Cancelled years (bookkeeping): ' + Array.from(canceledYears).sort().join(', ');
       controls.appendChild(note);
-      years.forEach(y => { const opt = document.createElement('option'); opt.value = y; opt.textContent = y; select.appendChild(opt); });
+      // initial years render
+      renderYears('all');
 
       // create markers and indexes
       const markersByYear = {};
@@ -158,18 +399,7 @@
         map.fitBounds(group.getBounds().pad(0.1));
       }
 
-      // timeline: render year chips
-      const timeline = document.getElementById('timeline');
-      years.forEach(y => {
-        const btn = document.createElement('button');
-        const isCancelled = canceledYears.has(String(y));
-        btn.textContent = isCancelled ? `${y} (Cancelled)` : y;
-        btn.style.padding = '6px 8px'; btn.style.fontSize = '13px'; btn.style.borderRadius = '4px'; btn.style.border = '1px solid rgba(0,0,0,0.08)';
-        btn.style.background = isCancelled ? '#f3f3f3' : '#fff';
-        btn.style.color = isCancelled ? '#666' : '#000';
-        btn.addEventListener('click', () => { select.value = y; select.dispatchEvent(new Event('change')); });
-        timeline.appendChild(btn);
-      });
+      // timeline rendered via renderYears()
 
       // search
       const searchBox = document.getElementById('searchBox');
@@ -201,50 +431,73 @@
       searchBtn.addEventListener('click', doSearch);
       searchBox.addEventListener('keydown', (e)=>{ if (e.key === 'Enter') doSearch(); });
 
-      // handle year filter
-      select.addEventListener('change', () => {
-        const val = select.value;
-        // clear any status message
+      function applyFilters() {
+        const yearVal = select.value;
+        const seasonVal = document.getElementById('seasonSelect').value;
         const statusElId = 'statusMessage';
         let statusEl = document.getElementById(statusElId);
         if (statusEl) statusEl.remove();
 
         if (currentCluster) map.removeLayer(currentCluster);
         currentCluster = L.markerClusterGroup();
-        if (val === 'all') {
-          currentCluster.addLayers(allMarkers);
-          map.addLayer(currentCluster);
-          if (allMarkers.length) map.fitBounds(L.featureGroup(allMarkers).getBounds().pad(0.1));
-        } else if (canceledYears.has(String(val))) {
-          // cancelled year: show no markers but display bookkeeping message
+
+        // cancelled year logic
+        if (yearVal !== 'all' && canceledYears.has(String(yearVal))) {
           map.addLayer(currentCluster); // empty
           statusEl = document.createElement('div');
           statusEl.id = statusElId;
           statusEl.style.marginTop = '6px'; statusEl.style.fontSize = '13px'; statusEl.style.color = '#a00';
-          statusEl.textContent = `Year ${val} was cancelled — no host locations are shown.`;
+          statusEl.textContent = `Year ${yearVal} was cancelled — no host locations are shown.`;
           controls.appendChild(statusEl);
-        } else {
-          const markers = markersByYear[val] || [];
-          currentCluster.addLayers(markers);
-          map.addLayer(currentCluster);
-          if (markers.length) map.fitBounds(L.featureGroup(markers).getBounds().pad(0.1));
+          return;
         }
+
+        let candidateMarkers = [];
+        if (yearVal === 'all') {
+          candidateMarkers = allMarkers.slice();
+        } else {
+          candidateMarkers = (markersByYear[yearVal] || []).slice();
+        }
+
+        if (seasonVal !== 'all') {
+          candidateMarkers = candidateMarkers.filter(m => (m._meta.season === seasonVal));
+        }
+
+        currentCluster.addLayers(candidateMarkers);
+        map.addLayer(currentCluster);
+        if (candidateMarkers.length) {
+          if (candidateMarkers.length === 1) {
+            // For single selection (often a specific year), avoid zooming too deep
+            const m = candidateMarkers[0];
+            map.setView(m.getLatLng(), Math.max(map.getZoom(), 5));
+          } else {
+            // Fit bounds but with extra padding to reduce aggressive zoom-in
+            const bounds = L.featureGroup(candidateMarkers).getBounds().pad(0.2);
+            map.fitBounds(bounds, { maxZoom: 6 });
+          }
+        }
+      }
+
+      select.addEventListener('change', applyFilters);
+      document.getElementById('seasonSelect').addEventListener('change', (e) => {
+        renderYears(e.target.value);
+        applyFilters();
       });
 
       document.getElementById('resetBtn').addEventListener('click', () => {
         select.value = 'all';
+        document.getElementById('seasonSelect').value = 'all';
         searchBox.value = '';
-        if (currentCluster) map.removeLayer(currentCluster);
-        currentCluster = L.markerClusterGroup();
-        currentCluster.addLayers(allMarkers);
-        map.addLayer(currentCluster);
-        if (allMarkers.length) map.fitBounds(L.featureGroup(allMarkers).getBounds().pad(0.1));
+        applyFilters();
       });
+
+      // initial filter to respect defaults
+      applyFilters();
     }
 
     loadAndRender().catch(err => {
       console.error(err);
-      const el = document.createElement('div'); el.style.padding = '12px'; el.style.background = 'white'; el.textContent = 'Failed to load geocoded data.'; document.body.appendChild(el);
+      const el = document.createElement('div'); el.style.padding = '12px'; el.style.background = 'white'; el.textContent = 'Failed to load geocoded data (DB & JSON).'; document.body.appendChild(el);
     });
   </script>
 </body>

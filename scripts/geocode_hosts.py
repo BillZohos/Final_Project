@@ -25,12 +25,7 @@ INPUT_CSV = "data/olympic_host_cities_normalized_clean.csv"
 CACHE_JSON = "data/geocoded_hosts.json"
 OUT_CSV = "data/geocoded_hosts.csv"
 
-import os
-
-# USER_AGENT should identify the application and include a contact (email or URL).
-# You can override by setting the USER_AGENT env var. Example:
-# USER_AGENT='FinalProjectGeocoder/1.0 (you@example.com)'
-USER_AGENT = os.environ.get("USER_AGENT", "MyOlympicsScraper/1.0 (+https://your-website.example/info; you@example.com)")
+USER_AGENT = "MyOlympicsScraper/1.0 (+https://your-website.example/info; you@example.com)"
 
 
 def make_key(row: Dict[str, str]) -> str:
