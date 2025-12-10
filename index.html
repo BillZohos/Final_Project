@@ -149,6 +149,7 @@ FROM olympics</pre>
   <button id="backToTop" aria-label="Back to landing page" style="position:absolute; top:10px; right:58px; z-index:1001; background:#0077cc; color:#fff; border:none; padding:8px 14px; font-size:13px; border-radius:8px; cursor:pointer; box-shadow:0 3px 8px rgba(0,0,0,0.25); display:none; opacity:0; transition:opacity .3s ease;">Back to Top ↑</button>
   <div id="map"></div>
   <div id="credits">Map: <a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a> • Data: `olympics_geocoded.db` (SQLite via sql.js, fallback JSON)</div>
+  <div id="seasonNote" style="position:absolute; right:10px; bottom:40px; z-index:1000; background: rgba(255,255,255,0.85); padding:6px; border-radius:6px; font-size:12px">Season info: `data/olympics_games.csv`</div>
   <div id="timeline" style="position: absolute; left: 0; right:0; bottom: 80px; z-index:1000; display:flex; gap:6px; padding:8px; overflow:auto;"></div>
   </section>
 
@@ -160,8 +161,39 @@ FROM olympics</pre>
     const MAP_DIV_ID = 'map';
     const DB_PATH = 'olympics_geocoded.db'; // SQLite database file
     const FALLBACK_JSON = 'data/olympics_games_geocoded.json'; // fallback data source
+    const GAMES_CSV = 'data/olympics_games.csv'; // authoritative games CSV (user edits season here)
     let itemsCache = null;
     const canceledYears = new Set(['1916', '1940', '1944']);
+
+    // Simple CSV parser that handles quoted fields (used to read GAMES_CSV)
+    function splitCSVLine(line){
+      const res = [];
+      let cur = '';
+      let inQuotes = false;
+      for (let i = 0; i < line.length; i++){
+        const ch = line[i];
+        if (ch === '"'){
+          if (inQuotes && line[i+1] === '"') { cur += '"'; i++; }
+          else { inQuotes = !inQuotes; }
+        } else if (ch === ',' && !inQuotes){
+          res.push(cur);
+          cur = '';
+        } else { cur += ch; }
+      }
+      res.push(cur);
+      return res;
+    }
+    function parseCSV(text){
+      const lines = text.split(/\r?\n/).filter(l=>l.trim().length>0);
+      if (!lines.length) return [];
+      const headers = splitCSVLine(lines[0]).map(h=>h.trim());
+      return lines.slice(1).map(line=>{
+        const cols = splitCSVLine(line);
+        const obj = {};
+        headers.forEach((h,i)=> obj[h] = (cols[i]||'').trim());
+        return obj;
+      });
+    }
 
     // guard: ensure Leaflet loaded
     if (typeof L === 'undefined') {
@@ -284,6 +316,37 @@ FROM olympics</pre>
                 o.key = `${o.year}|${o.city}|${o.country}`;
                 return o;
               });
+              // after loading items from DB, try to apply season overrides from the authoritative CSV
+              try {
+                const csvText = await fetch(GAMES_CSV + '?_=' + Date.now(), {cache: 'no-store'}).then(r => r.text());
+                const gamesRows = parseCSV(csvText);
+                const gamesByYear = {};
+                gamesRows.forEach(r => { const y = (r.Year||r.year||'').toString(); gamesByYear[y] = gamesByYear[y] || []; gamesByYear[y].push(r); });
+                function norm(s){ return (s||'').toLowerCase().replace(/"/g,'').replace(/\s+/g,' ').trim(); }
+                itemsCache.forEach(it => {
+                  const yr = (it.year||'').toString();
+                  const rows = gamesByYear[yr] || [];
+                  if (!rows.length) return;
+                  const cityNorm = norm(it.city);
+                  // prefer exact match, then contains
+                  let season = '';
+                  for (const gr of rows){
+                    const gcity = norm(gr.City || gr.city || '');
+                    if (!gcity) continue;
+                    if (gcity === cityNorm) { season = (gr.Season||gr.season||'').trim(); break; }
+                  }
+                  if (!season){
+                    for (const gr of rows){
+                      const gcity = norm(gr.City || gr.city || '');
+                      if (!gcity) continue;
+                      if (gcity.includes(cityNorm) || cityNorm.includes(gcity)) { season = (gr.Season||gr.season||'').trim(); break; }
+                    }
+                  }
+                  if (season) it.season = season;
+                });
+              } catch (e) {
+                // silent: CSV may not exist in every env
+              }
               return itemsCache;
             }
         }
